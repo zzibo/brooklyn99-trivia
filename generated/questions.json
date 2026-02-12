@@ -1,0 +1,4323 @@
+[
+  {
+    "id": 1,
+    "categoryId": "general",
+    "characterId": "holt",
+    "question": "What is the name of the precinct where the squad works?",
+    "difficulty": 1,
+    "answers": [
+      {
+        "id": 1,
+        "text": "99th Precinct",
+        "isCorrect": true
+      },
+      {
+        "id": 2,
+        "text": "97th Precinct",
+        "isCorrect": false
+      },
+      {
+        "id": 3,
+        "text": "101st Precinct",
+        "isCorrect": false
+      },
+      {
+        "id": 4,
+        "text": "88th Precinct",
+        "isCorrect": false
+      }
+    ]
+  },
+  {
+    "id": 2,
+    "categoryId": "general",
+    "characterId": "jake",
+    "question": "In what borough of New York City is the 99th Precinct located?",
+    "difficulty": 1,
+    "answers": [
+      {
+        "id": 5,
+        "text": "Brooklyn",
+        "isCorrect": true
+      },
+      {
+        "id": 6,
+        "text": "Manhattan",
+        "isCorrect": false
+      },
+      {
+        "id": 7,
+        "text": "Queens",
+        "isCorrect": false
+      },
+      {
+        "id": 8,
+        "text": "The Bronx",
+        "isCorrect": false
+      }
+    ]
+  },
+  {
+    "id": 3,
+    "categoryId": "general",
+    "characterId": "amy",
+    "question": "How many seasons did Brooklyn Nine-Nine run for?",
+    "difficulty": 1,
+    "answers": [
+      {
+        "id": 9,
+        "text": "8 seasons",
+        "isCorrect": true
+      },
+      {
+        "id": 10,
+        "text": "7 seasons",
+        "isCorrect": false
+      },
+      {
+        "id": 11,
+        "text": "9 seasons",
+        "isCorrect": false
+      },
+      {
+        "id": 12,
+        "text": "6 seasons",
+        "isCorrect": false
+      }
+    ]
+  },
+  {
+    "id": 4,
+    "categoryId": "general",
+    "characterId": "terry",
+    "question": "Which network originally aired Brooklyn Nine-Nine before it moved?",
+    "difficulty": 2,
+    "answers": [
+      {
+        "id": 13,
+        "text": "FOX",
+        "isCorrect": true
+      },
+      {
+        "id": 14,
+        "text": "NBC",
+        "isCorrect": false
+      },
+      {
+        "id": 15,
+        "text": "ABC",
+        "isCorrect": false
+      },
+      {
+        "id": 16,
+        "text": "CBS",
+        "isCorrect": false
+      }
+    ]
+  },
+  {
+    "id": 5,
+    "categoryId": "general",
+    "characterId": "holt",
+    "question": "Which network picked up Brooklyn Nine-Nine after it was cancelled?",
+    "difficulty": 1,
+    "answers": [
+      {
+        "id": 17,
+        "text": "NBC",
+        "isCorrect": true
+      },
+      {
+        "id": 18,
+        "text": "CBS",
+        "isCorrect": false
+      },
+      {
+        "id": 19,
+        "text": "Hulu",
+        "isCorrect": false
+      },
+      {
+        "id": 20,
+        "text": "Netflix",
+        "isCorrect": false
+      }
+    ]
+  },
+  {
+    "id": 6,
+    "categoryId": "general",
+    "characterId": "jake",
+    "question": "Who created Brooklyn Nine-Nine?",
+    "difficulty": 2,
+    "answers": [
+      {
+        "id": 21,
+        "text": "Dan Goor and Michael Schur",
+        "isCorrect": true
+      },
+      {
+        "id": 22,
+        "text": "Greg Daniels and Michael Schur",
+        "isCorrect": false
+      },
+      {
+        "id": 23,
+        "text": "Tina Fey and Robert Carlock",
+        "isCorrect": false
+      },
+      {
+        "id": 24,
+        "text": "Dan Goor and Greg Daniels",
+        "isCorrect": false
+      }
+    ]
+  },
+  {
+    "id": 7,
+    "categoryId": "general",
+    "characterId": "amy",
+    "question": "In what year did Brooklyn Nine-Nine premiere?",
+    "difficulty": 2,
+    "answers": [
+      {
+        "id": 25,
+        "text": "2013",
+        "isCorrect": true
+      },
+      {
+        "id": 26,
+        "text": "2012",
+        "isCorrect": false
+      },
+      {
+        "id": 27,
+        "text": "2014",
+        "isCorrect": false
+      },
+      {
+        "id": 28,
+        "text": "2011",
+        "isCorrect": false
+      }
+    ]
+  },
+  {
+    "id": 8,
+    "categoryId": "general",
+    "characterId": "holt",
+    "question": "What award did Brooklyn Nine-Nine win in its first season?",
+    "difficulty": 2,
+    "answers": [
+      {
+        "id": 29,
+        "text": "Golden Globe for Best TV Comedy",
+        "isCorrect": true
+      },
+      {
+        "id": 30,
+        "text": "Emmy for Outstanding Comedy Series",
+        "isCorrect": false
+      },
+      {
+        "id": 31,
+        "text": "Critics' Choice Award",
+        "isCorrect": false
+      },
+      {
+        "id": 32,
+        "text": "SAG Award for Best Ensemble",
+        "isCorrect": false
+      }
+    ]
+  },
+  {
+    "id": 9,
+    "categoryId": "general",
+    "characterId": "gina",
+    "question": "What is the name of the bar the squad frequently visits?",
+    "difficulty": 1,
+    "answers": [
+      {
+        "id": 33,
+        "text": "Shaw's Bar",
+        "isCorrect": true
+      },
+      {
+        "id": 34,
+        "text": "Paddy's Pub",
+        "isCorrect": false
+      },
+      {
+        "id": 35,
+        "text": "MacLaren's Pub",
+        "isCorrect": false
+      },
+      {
+        "id": 36,
+        "text": "The Precinct Pub",
+        "isCorrect": false
+      }
+    ]
+  },
+  {
+    "id": 10,
+    "categoryId": "general",
+    "characterId": "charles",
+    "question": "What floor does the 99th Precinct occupy in the building?",
+    "difficulty": 3,
+    "answers": [
+      {
+        "id": 37,
+        "text": "The entire building",
+        "isCorrect": true
+      },
+      {
+        "id": 38,
+        "text": "3rd floor",
+        "isCorrect": false
+      },
+      {
+        "id": 39,
+        "text": "Ground floor only",
+        "isCorrect": false
+      },
+      {
+        "id": 40,
+        "text": "2nd floor",
+        "isCorrect": false
+      }
+    ]
+  },
+  {
+    "id": 11,
+    "categoryId": "general",
+    "characterId": "rosa",
+    "question": "In the final season, what major social issue does the show address?",
+    "difficulty": 2,
+    "answers": [
+      {
+        "id": 41,
+        "text": "Police reform and racial justice",
+        "isCorrect": true
+      },
+      {
+        "id": 42,
+        "text": "Climate change",
+        "isCorrect": false
+      },
+      {
+        "id": 43,
+        "text": "Income inequality",
+        "isCorrect": false
+      },
+      {
+        "id": 44,
+        "text": "Immigration policy",
+        "isCorrect": false
+      }
+    ]
+  },
+  {
+    "id": 12,
+    "categoryId": "general",
+    "characterId": "holt",
+    "question": "What is the squad's Halloween tradition?",
+    "difficulty": 1,
+    "answers": [
+      {
+        "id": 45,
+        "text": "A heist competition",
+        "isCorrect": true
+      },
+      {
+        "id": 46,
+        "text": "A costume contest",
+        "isCorrect": false
+      },
+      {
+        "id": 47,
+        "text": "A haunted house",
+        "isCorrect": false
+      },
+      {
+        "id": 48,
+        "text": "A pumpkin carving contest",
+        "isCorrect": false
+      }
+    ]
+  },
+  {
+    "id": 13,
+    "categoryId": "general",
+    "characterId": "jake",
+    "question": "What is the name of the cold open format the show is known for?",
+    "difficulty": 2,
+    "answers": [
+      {
+        "id": 49,
+        "text": "Cold opens before the title card",
+        "isCorrect": true
+      },
+      {
+        "id": 50,
+        "text": "Flashback intros",
+        "isCorrect": false
+      },
+      {
+        "id": 51,
+        "text": "Narrator introductions",
+        "isCorrect": false
+      },
+      {
+        "id": 52,
+        "text": "Previously on recaps",
+        "isCorrect": false
+      }
+    ]
+  },
+  {
+    "id": 14,
+    "categoryId": "general",
+    "characterId": "terry",
+    "question": "What real-life actor plays Captain Holt?",
+    "difficulty": 1,
+    "answers": [
+      {
+        "id": 53,
+        "text": "Andre Braugher",
+        "isCorrect": true
+      },
+      {
+        "id": 54,
+        "text": "Terry Crews",
+        "isCorrect": false
+      },
+      {
+        "id": 55,
+        "text": "Idris Elba",
+        "isCorrect": false
+      },
+      {
+        "id": 56,
+        "text": "Laurence Fishburne",
+        "isCorrect": false
+      }
+    ]
+  },
+  {
+    "id": 15,
+    "categoryId": "general",
+    "characterId": "jake",
+    "question": "What real-life actor plays Jake Peralta?",
+    "difficulty": 1,
+    "answers": [
+      {
+        "id": 57,
+        "text": "Andy Samberg",
+        "isCorrect": true
+      },
+      {
+        "id": 58,
+        "text": "Adam Sandler",
+        "isCorrect": false
+      },
+      {
+        "id": 59,
+        "text": "Bill Hader",
+        "isCorrect": false
+      },
+      {
+        "id": 60,
+        "text": "Jason Sudeikis",
+        "isCorrect": false
+      }
+    ]
+  },
+  {
+    "id": 16,
+    "categoryId": "general",
+    "characterId": "amy",
+    "question": "Which character becomes the youngest captain in NYPD history?",
+    "difficulty": 2,
+    "answers": [
+      {
+        "id": 61,
+        "text": "Amy Santiago",
+        "isCorrect": true
+      },
+      {
+        "id": 62,
+        "text": "Jake Peralta",
+        "isCorrect": false
+      },
+      {
+        "id": 63,
+        "text": "Raymond Holt",
+        "isCorrect": false
+      },
+      {
+        "id": 64,
+        "text": "Rosa Diaz",
+        "isCorrect": false
+      }
+    ]
+  },
+  {
+    "id": 17,
+    "categoryId": "general",
+    "characterId": "holt",
+    "question": "What is Captain Holt's first name?",
+    "difficulty": 1,
+    "answers": [
+      {
+        "id": 65,
+        "text": "Raymond",
+        "isCorrect": true
+      },
+      {
+        "id": 66,
+        "text": "Robert",
+        "isCorrect": false
+      },
+      {
+        "id": 67,
+        "text": "Richard",
+        "isCorrect": false
+      },
+      {
+        "id": 68,
+        "text": "Ronald",
+        "isCorrect": false
+      }
+    ]
+  },
+  {
+    "id": 18,
+    "categoryId": "general",
+    "characterId": "gina",
+    "question": "What role does Gina Linetti hold at the 99th Precinct?",
+    "difficulty": 1,
+    "answers": [
+      {
+        "id": 69,
+        "text": "Civilian administrator",
+        "isCorrect": true
+      },
+      {
+        "id": 70,
+        "text": "Detective",
+        "isCorrect": false
+      },
+      {
+        "id": 71,
+        "text": "IT specialist",
+        "isCorrect": false
+      },
+      {
+        "id": 72,
+        "text": "Forensic analyst",
+        "isCorrect": false
+      }
+    ]
+  },
+  {
+    "id": 19,
+    "categoryId": "general",
+    "characterId": "rosa",
+    "question": "What instrument does Rosa Diaz secretly play?",
+    "difficulty": 3,
+    "answers": [
+      {
+        "id": 73,
+        "text": "Violin",
+        "isCorrect": true
+      },
+      {
+        "id": 74,
+        "text": "Piano",
+        "isCorrect": false
+      },
+      {
+        "id": 75,
+        "text": "Guitar",
+        "isCorrect": false
+      },
+      {
+        "id": 76,
+        "text": "Drums",
+        "isCorrect": false
+      }
+    ]
+  },
+  {
+    "id": 20,
+    "categoryId": "general",
+    "characterId": "jake",
+    "question": "What is Jake's badge number?",
+    "difficulty": 3,
+    "answers": [
+      {
+        "id": 77,
+        "text": "9544",
+        "isCorrect": true
+      },
+      {
+        "id": 78,
+        "text": "7734",
+        "isCorrect": false
+      },
+      {
+        "id": 79,
+        "text": "1138",
+        "isCorrect": false
+      },
+      {
+        "id": 80,
+        "text": "4815",
+        "isCorrect": false
+      }
+    ]
+  },
+  {
+    "id": 21,
+    "categoryId": "general",
+    "characterId": "holt",
+    "question": "What position does Holt get promoted to in the series finale?",
+    "difficulty": 2,
+    "answers": [
+      {
+        "id": 81,
+        "text": "Commissioner",
+        "isCorrect": true
+      },
+      {
+        "id": 82,
+        "text": "Deputy Chief",
+        "isCorrect": false
+      },
+      {
+        "id": 83,
+        "text": "Chief of Detectives",
+        "isCorrect": false
+      },
+      {
+        "id": 84,
+        "text": "Deputy Commissioner",
+        "isCorrect": false
+      }
+    ]
+  },
+  {
+    "id": 22,
+    "categoryId": "general",
+    "characterId": "charles",
+    "question": "What type of food truck does Charles briefly own?",
+    "difficulty": 3,
+    "answers": [
+      {
+        "id": 85,
+        "text": "A meat-themed food truck",
+        "isCorrect": true
+      },
+      {
+        "id": 86,
+        "text": "A taco truck",
+        "isCorrect": false
+      },
+      {
+        "id": 87,
+        "text": "A pizza truck",
+        "isCorrect": false
+      },
+      {
+        "id": 88,
+        "text": "A sushi truck",
+        "isCorrect": false
+      }
+    ]
+  },
+  {
+    "id": 23,
+    "categoryId": "general",
+    "characterId": "terry",
+    "question": "What does Terry Jeffords do as a hobby outside of police work?",
+    "difficulty": 2,
+    "answers": [
+      {
+        "id": 89,
+        "text": "Painting and drawing",
+        "isCorrect": true
+      },
+      {
+        "id": 90,
+        "text": "Woodworking",
+        "isCorrect": false
+      },
+      {
+        "id": 91,
+        "text": "Cooking",
+        "isCorrect": false
+      },
+      {
+        "id": 92,
+        "text": "Playing guitar",
+        "isCorrect": false
+      }
+    ]
+  },
+  {
+    "id": 24,
+    "categoryId": "general",
+    "characterId": "amy",
+    "question": "What kind of competition does Amy organize for the precinct?",
+    "difficulty": 3,
+    "answers": [
+      {
+        "id": 93,
+        "text": "A Jimmy Jab Games",
+        "isCorrect": false
+      },
+      {
+        "id": 94,
+        "text": "A binder organization contest",
+        "isCorrect": true
+      },
+      {
+        "id": 95,
+        "text": "A spelling bee",
+        "isCorrect": false
+      },
+      {
+        "id": 96,
+        "text": "A filing speed race",
+        "isCorrect": false
+      }
+    ]
+  },
+  {
+    "id": 25,
+    "categoryId": "general",
+    "characterId": "jake",
+    "question": "What NYPD division does Jake go undercover for?",
+    "difficulty": 2,
+    "answers": [
+      {
+        "id": 97,
+        "text": "The FBI",
+        "isCorrect": true
+      },
+      {
+        "id": 98,
+        "text": "Internal Affairs",
+        "isCorrect": false
+      },
+      {
+        "id": 99,
+        "text": "The DEA",
+        "isCorrect": false
+      },
+      {
+        "id": 100,
+        "text": "The CIA",
+        "isCorrect": false
+      }
+    ]
+  },
+  {
+    "id": 26,
+    "categoryId": "general",
+    "characterId": "holt",
+    "question": "What breed is Captain Holt's dog Cheddar?",
+    "difficulty": 1,
+    "answers": [
+      {
+        "id": 101,
+        "text": "Pembroke Welsh Corgi",
+        "isCorrect": true
+      },
+      {
+        "id": 102,
+        "text": "French Bulldog",
+        "isCorrect": false
+      },
+      {
+        "id": 103,
+        "text": "Shiba Inu",
+        "isCorrect": false
+      },
+      {
+        "id": 104,
+        "text": "Cavalier King Charles Spaniel",
+        "isCorrect": false
+      }
+    ]
+  },
+  {
+    "id": 27,
+    "categoryId": "general",
+    "characterId": "rosa",
+    "question": "What martial art does Rosa practice?",
+    "difficulty": 3,
+    "answers": [
+      {
+        "id": 105,
+        "text": "Krav Maga",
+        "isCorrect": true
+      },
+      {
+        "id": 106,
+        "text": "Karate",
+        "isCorrect": false
+      },
+      {
+        "id": 107,
+        "text": "Jiu-Jitsu",
+        "isCorrect": false
+      },
+      {
+        "id": 108,
+        "text": "Muay Thai",
+        "isCorrect": false
+      }
+    ]
+  },
+  {
+    "id": 28,
+    "categoryId": "general",
+    "characterId": "gina",
+    "question": "What social media platform is Gina obsessed with?",
+    "difficulty": 1,
+    "answers": [
+      {
+        "id": 109,
+        "text": "Twitter/Social media in general",
+        "isCorrect": true
+      },
+      {
+        "id": 110,
+        "text": "Facebook",
+        "isCorrect": false
+      },
+      {
+        "id": 111,
+        "text": "TikTok",
+        "isCorrect": false
+      },
+      {
+        "id": 112,
+        "text": "LinkedIn",
+        "isCorrect": false
+      }
+    ]
+  },
+  {
+    "id": 29,
+    "categoryId": "general",
+    "characterId": "jake",
+    "question": "What movie franchise is Jake Peralta obsessed with?",
+    "difficulty": 1,
+    "answers": [
+      {
+        "id": 113,
+        "text": "Die Hard",
+        "isCorrect": true
+      },
+      {
+        "id": 114,
+        "text": "Fast & Furious",
+        "isCorrect": false
+      },
+      {
+        "id": 115,
+        "text": "Star Wars",
+        "isCorrect": false
+      },
+      {
+        "id": 116,
+        "text": "Mission Impossible",
+        "isCorrect": false
+      }
+    ]
+  },
+  {
+    "id": 30,
+    "categoryId": "general",
+    "characterId": "terry",
+    "question": "How many daughters does Terry have?",
+    "difficulty": 2,
+    "answers": [
+      {
+        "id": 117,
+        "text": "Three (twins + one)",
+        "isCorrect": true
+      },
+      {
+        "id": 118,
+        "text": "Two (twins)",
+        "isCorrect": false
+      },
+      {
+        "id": 119,
+        "text": "One",
+        "isCorrect": false
+      },
+      {
+        "id": 120,
+        "text": "Four",
+        "isCorrect": false
+      }
+    ]
+  },
+  {
+    "id": 31,
+    "categoryId": "characters",
+    "characterId": "holt",
+    "question": "What is the name of Captain Holt's husband?",
+    "difficulty": 1,
+    "answers": [
+      {
+        "id": 121,
+        "text": "Kevin Cozner",
+        "isCorrect": true
+      },
+      {
+        "id": 122,
+        "text": "Kevin Costner",
+        "isCorrect": false
+      },
+      {
+        "id": 123,
+        "text": "Marcus Holt",
+        "isCorrect": false
+      },
+      {
+        "id": 124,
+        "text": "David Cozner",
+        "isCorrect": false
+      }
+    ]
+  },
+  {
+    "id": 32,
+    "categoryId": "characters",
+    "characterId": "holt",
+    "question": "What is Kevin Cozner's profession?",
+    "difficulty": 2,
+    "answers": [
+      {
+        "id": 125,
+        "text": "Classics professor at Columbia",
+        "isCorrect": true
+      },
+      {
+        "id": 126,
+        "text": "Lawyer",
+        "isCorrect": false
+      },
+      {
+        "id": 127,
+        "text": "English professor at NYU",
+        "isCorrect": false
+      },
+      {
+        "id": 128,
+        "text": "Architect",
+        "isCorrect": false
+      }
+    ]
+  },
+  {
+    "id": 33,
+    "categoryId": "characters",
+    "characterId": "holt",
+    "question": "What is the name of Captain Holt's dog?",
+    "difficulty": 1,
+    "answers": [
+      {
+        "id": 129,
+        "text": "Cheddar",
+        "isCorrect": true
+      },
+      {
+        "id": 130,
+        "text": "Biscuit",
+        "isCorrect": false
+      },
+      {
+        "id": 131,
+        "text": "Gouda",
+        "isCorrect": false
+      },
+      {
+        "id": 132,
+        "text": "Mozzarella",
+        "isCorrect": false
+      }
+    ]
+  },
+  {
+    "id": 34,
+    "categoryId": "characters",
+    "characterId": "jake",
+    "question": "What is the name of Jake's father?",
+    "difficulty": 2,
+    "answers": [
+      {
+        "id": 133,
+        "text": "Roger Peralta",
+        "isCorrect": true
+      },
+      {
+        "id": 134,
+        "text": "Robert Peralta",
+        "isCorrect": false
+      },
+      {
+        "id": 135,
+        "text": "Richard Peralta",
+        "isCorrect": false
+      },
+      {
+        "id": 136,
+        "text": "Raymond Peralta",
+        "isCorrect": false
+      }
+    ]
+  },
+  {
+    "id": 35,
+    "categoryId": "characters",
+    "characterId": "jake",
+    "question": "What does Jake's father do for a living?",
+    "difficulty": 2,
+    "answers": [
+      {
+        "id": 137,
+        "text": "Airline pilot",
+        "isCorrect": true
+      },
+      {
+        "id": 138,
+        "text": "Lawyer",
+        "isCorrect": false
+      },
+      {
+        "id": 139,
+        "text": "Salesman",
+        "isCorrect": false
+      },
+      {
+        "id": 140,
+        "text": "Musician",
+        "isCorrect": false
+      }
+    ]
+  },
+  {
+    "id": 36,
+    "categoryId": "characters",
+    "characterId": "amy",
+    "question": "How many brothers does Amy Santiago have?",
+    "difficulty": 2,
+    "answers": [
+      {
+        "id": 141,
+        "text": "Seven",
+        "isCorrect": true
+      },
+      {
+        "id": 142,
+        "text": "Five",
+        "isCorrect": false
+      },
+      {
+        "id": 143,
+        "text": "Three",
+        "isCorrect": false
+      },
+      {
+        "id": 144,
+        "text": "Six",
+        "isCorrect": false
+      }
+    ]
+  },
+  {
+    "id": 37,
+    "categoryId": "characters",
+    "characterId": "charles",
+    "question": "What is the name of Charles Boyle's ex-wife?",
+    "difficulty": 2,
+    "answers": [
+      {
+        "id": 145,
+        "text": "Eleanor",
+        "isCorrect": true
+      },
+      {
+        "id": 146,
+        "text": "Vivian",
+        "isCorrect": false
+      },
+      {
+        "id": 147,
+        "text": "Genevieve",
+        "isCorrect": false
+      },
+      {
+        "id": 148,
+        "text": "Patricia",
+        "isCorrect": false
+      }
+    ]
+  },
+  {
+    "id": 38,
+    "categoryId": "characters",
+    "characterId": "charles",
+    "question": "What is the name of Charles's adopted son?",
+    "difficulty": 1,
+    "answers": [
+      {
+        "id": 149,
+        "text": "Nikolaj",
+        "isCorrect": true
+      },
+      {
+        "id": 150,
+        "text": "Nikolas",
+        "isCorrect": false
+      },
+      {
+        "id": 151,
+        "text": "Nikolai",
+        "isCorrect": false
+      },
+      {
+        "id": 152,
+        "text": "Nikola",
+        "isCorrect": false
+      }
+    ]
+  },
+  {
+    "id": 39,
+    "categoryId": "characters",
+    "characterId": "terry",
+    "question": "What are the names of Terry's twin daughters?",
+    "difficulty": 2,
+    "answers": [
+      {
+        "id": 153,
+        "text": "Cagney and Lacey",
+        "isCorrect": true
+      },
+      {
+        "id": 154,
+        "text": "Tiffany and Brittany",
+        "isCorrect": false
+      },
+      {
+        "id": 155,
+        "text": "Starsky and Hutch",
+        "isCorrect": false
+      },
+      {
+        "id": 156,
+        "text": "Mary and Martha",
+        "isCorrect": false
+      }
+    ]
+  },
+  {
+    "id": 40,
+    "categoryId": "characters",
+    "characterId": "terry",
+    "question": "What is the name of Terry's third daughter?",
+    "difficulty": 3,
+    "answers": [
+      {
+        "id": 157,
+        "text": "Ava",
+        "isCorrect": true
+      },
+      {
+        "id": 158,
+        "text": "Aria",
+        "isCorrect": false
+      },
+      {
+        "id": 159,
+        "text": "Amelia",
+        "isCorrect": false
+      },
+      {
+        "id": 160,
+        "text": "Aurora",
+        "isCorrect": false
+      }
+    ]
+  },
+  {
+    "id": 41,
+    "categoryId": "characters",
+    "characterId": "rosa",
+    "question": "What secret does Rosa reveal to the squad about her personal life?",
+    "difficulty": 1,
+    "answers": [
+      {
+        "id": 161,
+        "text": "She is bisexual",
+        "isCorrect": true
+      },
+      {
+        "id": 162,
+        "text": "She has a twin sister",
+        "isCorrect": false
+      },
+      {
+        "id": 163,
+        "text": "She was in a band",
+        "isCorrect": false
+      },
+      {
+        "id": 164,
+        "text": "She went to medical school",
+        "isCorrect": false
+      }
+    ]
+  },
+  {
+    "id": 42,
+    "categoryId": "characters",
+    "characterId": "rosa",
+    "question": "What prestigious school did Rosa Diaz drop out of?",
+    "difficulty": 2,
+    "answers": [
+      {
+        "id": 165,
+        "text": "Medical school (she was going to be a doctor)",
+        "isCorrect": false
+      },
+      {
+        "id": 166,
+        "text": "Law school at Harvard",
+        "isCorrect": false
+      },
+      {
+        "id": 167,
+        "text": "Business school at Wharton",
+        "isCorrect": false
+      },
+      {
+        "id": 168,
+        "text": "Ballet school (American Ballet Academy)",
+        "isCorrect": true
+      }
+    ]
+  },
+  {
+    "id": 43,
+    "categoryId": "characters",
+    "characterId": "gina",
+    "question": "What is the name of Gina's dance troupe?",
+    "difficulty": 2,
+    "answers": [
+      {
+        "id": 169,
+        "text": "Floorgasm",
+        "isCorrect": true
+      },
+      {
+        "id": 170,
+        "text": "Dance Explosion",
+        "isCorrect": false
+      },
+      {
+        "id": 171,
+        "text": "The Gina-nators",
+        "isCorrect": false
+      },
+      {
+        "id": 172,
+        "text": "Floor Slammerz",
+        "isCorrect": false
+      }
+    ]
+  },
+  {
+    "id": 44,
+    "categoryId": "characters",
+    "characterId": "hitchcock",
+    "question": "What was Hitchcock like in his younger years?",
+    "difficulty": 2,
+    "answers": [
+      {
+        "id": 173,
+        "text": "Surprisingly attractive and competent",
+        "isCorrect": true
+      },
+      {
+        "id": 174,
+        "text": "Exactly the same",
+        "isCorrect": false
+      },
+      {
+        "id": 175,
+        "text": "A strict by-the-book detective",
+        "isCorrect": false
+      },
+      {
+        "id": 176,
+        "text": "An undercover specialist",
+        "isCorrect": false
+      }
+    ]
+  },
+  {
+    "id": 45,
+    "categoryId": "characters",
+    "characterId": "scully",
+    "question": "What medical condition does Scully claim to have?",
+    "difficulty": 3,
+    "answers": [
+      {
+        "id": 177,
+        "text": "Multiple unnamed conditions (always at the doctor)",
+        "isCorrect": true
+      },
+      {
+        "id": 178,
+        "text": "A bad knee",
+        "isCorrect": false
+      },
+      {
+        "id": 179,
+        "text": "Chronic fatigue syndrome",
+        "isCorrect": false
+      },
+      {
+        "id": 180,
+        "text": "Lactose intolerance",
+        "isCorrect": false
+      }
+    ]
+  },
+  {
+    "id": 46,
+    "categoryId": "characters",
+    "characterId": "doug-judy",
+    "question": "What is Doug Judy's criminal specialty?",
+    "difficulty": 1,
+    "answers": [
+      {
+        "id": 181,
+        "text": "Stealing cars (the Pontiac Bandit)",
+        "isCorrect": true
+      },
+      {
+        "id": 182,
+        "text": "Bank robbery",
+        "isCorrect": false
+      },
+      {
+        "id": 183,
+        "text": "Art theft",
+        "isCorrect": false
+      },
+      {
+        "id": 184,
+        "text": "Identity fraud",
+        "isCorrect": false
+      }
+    ]
+  },
+  {
+    "id": 47,
+    "categoryId": "characters",
+    "characterId": "vulture",
+    "question": "What is the Vulture's real name?",
+    "difficulty": 2,
+    "answers": [
+      {
+        "id": 185,
+        "text": "Keith Pemberton",
+        "isCorrect": true
+      },
+      {
+        "id": 186,
+        "text": "Kevin Pemberton",
+        "isCorrect": false
+      },
+      {
+        "id": 187,
+        "text": "Karl Peterson",
+        "isCorrect": false
+      },
+      {
+        "id": 188,
+        "text": "Kyle Patterson",
+        "isCorrect": false
+      }
+    ]
+  },
+  {
+    "id": 48,
+    "categoryId": "characters",
+    "characterId": "wuntch",
+    "question": "What is Madeline Wuntch's rank in the NYPD?",
+    "difficulty": 2,
+    "answers": [
+      {
+        "id": 189,
+        "text": "Deputy Chief",
+        "isCorrect": true
+      },
+      {
+        "id": 190,
+        "text": "Commissioner",
+        "isCorrect": false
+      },
+      {
+        "id": 191,
+        "text": "Chief of Detectives",
+        "isCorrect": false
+      },
+      {
+        "id": 192,
+        "text": "Inspector",
+        "isCorrect": false
+      }
+    ]
+  },
+  {
+    "id": 49,
+    "categoryId": "characters",
+    "characterId": "holt",
+    "question": "What does Holt call his nemesis Madeline Wuntch in his insults?",
+    "difficulty": 2,
+    "answers": [
+      {
+        "id": 193,
+        "text": "Various monster/demon comparisons",
+        "isCorrect": true
+      },
+      {
+        "id": 194,
+        "text": "Only her last name coldly",
+        "isCorrect": false
+      },
+      {
+        "id": 195,
+        "text": "Ma'am (sarcastically)",
+        "isCorrect": false
+      },
+      {
+        "id": 196,
+        "text": "Her first name only",
+        "isCorrect": false
+      }
+    ]
+  },
+  {
+    "id": 50,
+    "categoryId": "characters",
+    "characterId": "jake",
+    "question": "What childhood toy does Jake still own and cherish?",
+    "difficulty": 3,
+    "answers": [
+      {
+        "id": 197,
+        "text": "A leather jacket (not a toy but cherished)",
+        "isCorrect": false
+      },
+      {
+        "id": 198,
+        "text": "His Die Hard VHS tape",
+        "isCorrect": true
+      },
+      {
+        "id": 199,
+        "text": "A Teenage Mutant Ninja Turtles figure",
+        "isCorrect": false
+      },
+      {
+        "id": 200,
+        "text": "A baseball glove from his dad",
+        "isCorrect": false
+      }
+    ]
+  },
+  {
+    "id": 51,
+    "categoryId": "characters",
+    "characterId": "amy",
+    "question": "What is Amy's signature organizational tool?",
+    "difficulty": 1,
+    "answers": [
+      {
+        "id": 201,
+        "text": "Binders",
+        "isCorrect": true
+      },
+      {
+        "id": 202,
+        "text": "Spreadsheets",
+        "isCorrect": false
+      },
+      {
+        "id": 203,
+        "text": "Post-it notes",
+        "isCorrect": false
+      },
+      {
+        "id": 204,
+        "text": "Filing cabinets",
+        "isCorrect": false
+      }
+    ]
+  },
+  {
+    "id": 52,
+    "categoryId": "characters",
+    "characterId": "charles",
+    "question": "What kind of food does Charles consider himself an expert on?",
+    "difficulty": 1,
+    "answers": [
+      {
+        "id": 205,
+        "text": "All food (he's a foodie/gourmand)",
+        "isCorrect": true
+      },
+      {
+        "id": 206,
+        "text": "Italian food only",
+        "isCorrect": false
+      },
+      {
+        "id": 207,
+        "text": "French cuisine only",
+        "isCorrect": false
+      },
+      {
+        "id": 208,
+        "text": "Street food",
+        "isCorrect": false
+      }
+    ]
+  },
+  {
+    "id": 53,
+    "categoryId": "characters",
+    "characterId": "terry",
+    "question": "What food does Terry love and frequently mention?",
+    "difficulty": 1,
+    "answers": [
+      {
+        "id": 209,
+        "text": "Yogurt",
+        "isCorrect": true
+      },
+      {
+        "id": 210,
+        "text": "Pizza",
+        "isCorrect": false
+      },
+      {
+        "id": 211,
+        "text": "Steak",
+        "isCorrect": false
+      },
+      {
+        "id": 212,
+        "text": "Chicken wings",
+        "isCorrect": false
+      }
+    ]
+  },
+  {
+    "id": 54,
+    "categoryId": "characters",
+    "characterId": "gina",
+    "question": "Who is Gina's celebrity crush that she frequently mentions?",
+    "difficulty": 3,
+    "answers": [
+      {
+        "id": 213,
+        "text": "Herself",
+        "isCorrect": true
+      },
+      {
+        "id": 214,
+        "text": "Ryan Gosling",
+        "isCorrect": false
+      },
+      {
+        "id": 215,
+        "text": "Drake",
+        "isCorrect": false
+      },
+      {
+        "id": 216,
+        "text": "Beyonce",
+        "isCorrect": false
+      }
+    ]
+  },
+  {
+    "id": 55,
+    "categoryId": "characters",
+    "characterId": "holt",
+    "question": "What distinctive speaking pattern is Captain Holt known for?",
+    "difficulty": 1,
+    "answers": [
+      {
+        "id": 217,
+        "text": "Monotone and deadpan delivery",
+        "isCorrect": true
+      },
+      {
+        "id": 218,
+        "text": "Loud and boisterous",
+        "isCorrect": false
+      },
+      {
+        "id": 219,
+        "text": "Constantly using slang",
+        "isCorrect": false
+      },
+      {
+        "id": 220,
+        "text": "Speaking very quickly",
+        "isCorrect": false
+      }
+    ]
+  },
+  {
+    "id": 56,
+    "categoryId": "characters",
+    "characterId": "jake",
+    "question": "What is Jake's relationship to his mother Karen?",
+    "difficulty": 2,
+    "answers": [
+      {
+        "id": 221,
+        "text": "Very close — she raised him alone",
+        "isCorrect": true
+      },
+      {
+        "id": 222,
+        "text": "Distant — they rarely speak",
+        "isCorrect": false
+      },
+      {
+        "id": 223,
+        "text": "Complicated — she left when he was young",
+        "isCorrect": false
+      },
+      {
+        "id": 224,
+        "text": "Normal — nothing remarkable",
+        "isCorrect": false
+      }
+    ]
+  },
+  {
+    "id": 57,
+    "categoryId": "characters",
+    "characterId": "amy",
+    "question": "What does Amy fear more than anything?",
+    "difficulty": 2,
+    "answers": [
+      {
+        "id": 225,
+        "text": "Failing/disappointing authority figures",
+        "isCorrect": true
+      },
+      {
+        "id": 226,
+        "text": "Spiders",
+        "isCorrect": false
+      },
+      {
+        "id": 227,
+        "text": "Public speaking",
+        "isCorrect": false
+      },
+      {
+        "id": 228,
+        "text": "Being alone",
+        "isCorrect": false
+      }
+    ]
+  },
+  {
+    "id": 58,
+    "categoryId": "characters",
+    "characterId": "charles",
+    "question": "What is Charles Boyle's relationship with Jake?",
+    "difficulty": 1,
+    "answers": [
+      {
+        "id": 229,
+        "text": "Best friend (he idolizes Jake)",
+        "isCorrect": true
+      },
+      {
+        "id": 230,
+        "text": "Friendly coworkers",
+        "isCorrect": false
+      },
+      {
+        "id": 231,
+        "text": "Rivals who became friends",
+        "isCorrect": false
+      },
+      {
+        "id": 232,
+        "text": "Childhood friends",
+        "isCorrect": false
+      }
+    ]
+  },
+  {
+    "id": 59,
+    "categoryId": "characters",
+    "characterId": "scully",
+    "question": "What is Scully's hidden talent?",
+    "difficulty": 3,
+    "answers": [
+      {
+        "id": 233,
+        "text": "He has an amazing singing voice",
+        "isCorrect": true
+      },
+      {
+        "id": 234,
+        "text": "He's a chess master",
+        "isCorrect": false
+      },
+      {
+        "id": 235,
+        "text": "He can solve any math problem",
+        "isCorrect": false
+      },
+      {
+        "id": 236,
+        "text": "He speaks five languages",
+        "isCorrect": false
+      }
+    ]
+  },
+  {
+    "id": 60,
+    "categoryId": "characters",
+    "characterId": "rosa",
+    "question": "What type of motorcycle does Rosa ride?",
+    "difficulty": 3,
+    "answers": [
+      {
+        "id": 237,
+        "text": "A Harley-Davidson",
+        "isCorrect": true
+      },
+      {
+        "id": 238,
+        "text": "A Ducati",
+        "isCorrect": false
+      },
+      {
+        "id": 239,
+        "text": "A Kawasaki Ninja",
+        "isCorrect": false
+      },
+      {
+        "id": 240,
+        "text": "A Triumph",
+        "isCorrect": false
+      }
+    ]
+  },
+  {
+    "id": 61,
+    "categoryId": "quotes",
+    "characterId": "jake",
+    "question": "Who says 'Cool cool cool cool cool cool cool cool, no doubt no doubt no doubt'?",
+    "difficulty": 1,
+    "answers": [
+      {
+        "id": 241,
+        "text": "Jake Peralta",
+        "isCorrect": true
+      },
+      {
+        "id": 242,
+        "text": "Charles Boyle",
+        "isCorrect": false
+      },
+      {
+        "id": 243,
+        "text": "Gina Linetti",
+        "isCorrect": false
+      },
+      {
+        "id": 244,
+        "text": "Terry Jeffords",
+        "isCorrect": false
+      }
+    ]
+  },
+  {
+    "id": 62,
+    "categoryId": "quotes",
+    "characterId": "terry",
+    "question": "Complete the quote: 'Terry loves ___'",
+    "difficulty": 1,
+    "answers": [
+      {
+        "id": 245,
+        "text": "Yogurt",
+        "isCorrect": true
+      },
+      {
+        "id": 246,
+        "text": "Justice",
+        "isCorrect": false
+      },
+      {
+        "id": 247,
+        "text": "Muscles",
+        "isCorrect": false
+      },
+      {
+        "id": 248,
+        "text": "Paperwork",
+        "isCorrect": false
+      }
+    ]
+  },
+  {
+    "id": 63,
+    "categoryId": "quotes",
+    "characterId": "holt",
+    "question": "Who says 'BONE?!' in an increasingly agitated manner?",
+    "difficulty": 1,
+    "answers": [
+      {
+        "id": 249,
+        "text": "Captain Holt",
+        "isCorrect": true
+      },
+      {
+        "id": 250,
+        "text": "Jake Peralta",
+        "isCorrect": false
+      },
+      {
+        "id": 251,
+        "text": "Amy Santiago",
+        "isCorrect": false
+      },
+      {
+        "id": 252,
+        "text": "Terry Jeffords",
+        "isCorrect": false
+      }
+    ]
+  },
+  {
+    "id": 64,
+    "categoryId": "quotes",
+    "characterId": "jake",
+    "question": "Complete Jake's catchphrase: 'Title of your ___'",
+    "difficulty": 1,
+    "answers": [
+      {
+        "id": 253,
+        "text": "Sex tape",
+        "isCorrect": true
+      },
+      {
+        "id": 254,
+        "text": "Autobiography",
+        "isCorrect": false
+      },
+      {
+        "id": 255,
+        "text": "Memoir",
+        "isCorrect": false
+      },
+      {
+        "id": 256,
+        "text": "Biography",
+        "isCorrect": false
+      }
+    ]
+  },
+  {
+    "id": 65,
+    "categoryId": "quotes",
+    "characterId": "gina",
+    "question": "Who says 'I'm the human form of the 100 emoji'?",
+    "difficulty": 1,
+    "answers": [
+      {
+        "id": 257,
+        "text": "Gina Linetti",
+        "isCorrect": true
+      },
+      {
+        "id": 258,
+        "text": "Jake Peralta",
+        "isCorrect": false
+      },
+      {
+        "id": 259,
+        "text": "Rosa Diaz",
+        "isCorrect": false
+      },
+      {
+        "id": 260,
+        "text": "Doug Judy",
+        "isCorrect": false
+      }
+    ]
+  },
+  {
+    "id": 66,
+    "categoryId": "quotes",
+    "characterId": "rosa",
+    "question": "Complete Rosa's quote: 'I've only said I love you to ___ people'",
+    "difficulty": 2,
+    "answers": [
+      {
+        "id": 261,
+        "text": "Two — my mom and my dying grandma",
+        "isCorrect": true
+      },
+      {
+        "id": 262,
+        "text": "Three — my parents and my dog",
+        "isCorrect": false
+      },
+      {
+        "id": 263,
+        "text": "One — my cat",
+        "isCorrect": false
+      },
+      {
+        "id": 264,
+        "text": "Zero — no one",
+        "isCorrect": false
+      }
+    ]
+  },
+  {
+    "id": 67,
+    "categoryId": "quotes",
+    "characterId": "holt",
+    "question": "What does Holt say when he's expressing excitement (deadpan)?",
+    "difficulty": 2,
+    "answers": [
+      {
+        "id": 265,
+        "text": "'Hot damn!'",
+        "isCorrect": true
+      },
+      {
+        "id": 266,
+        "text": "'Wonderful news!'",
+        "isCorrect": false
+      },
+      {
+        "id": 267,
+        "text": "'How exciting.'",
+        "isCorrect": false
+      },
+      {
+        "id": 268,
+        "text": "'Indeed.'",
+        "isCorrect": false
+      }
+    ]
+  },
+  {
+    "id": 68,
+    "categoryId": "quotes",
+    "characterId": "charles",
+    "question": "How does Charles typically mispronounce his son's name?",
+    "difficulty": 1,
+    "answers": [
+      {
+        "id": 269,
+        "text": "He insists others mispronounce it: 'It's Nikolaj'",
+        "isCorrect": true
+      },
+      {
+        "id": 270,
+        "text": "He says 'Nick-oh-laj'",
+        "isCorrect": false
+      },
+      {
+        "id": 271,
+        "text": "He says 'Nik-oh-lah'",
+        "isCorrect": false
+      },
+      {
+        "id": 272,
+        "text": "He always says it differently",
+        "isCorrect": false
+      }
+    ]
+  },
+  {
+    "id": 69,
+    "categoryId": "quotes",
+    "characterId": "jake",
+    "question": "What does Jake say when something is about to go wrong?",
+    "difficulty": 2,
+    "answers": [
+      {
+        "id": 273,
+        "text": "'Cool cool cool cool cool'",
+        "isCorrect": true
+      },
+      {
+        "id": 274,
+        "text": "'This is fine'",
+        "isCorrect": false
+      },
+      {
+        "id": 275,
+        "text": "'Noice'",
+        "isCorrect": false
+      },
+      {
+        "id": 276,
+        "text": "'Oh no'",
+        "isCorrect": false
+      }
+    ]
+  },
+  {
+    "id": 70,
+    "categoryId": "quotes",
+    "characterId": "jake",
+    "question": "What word does Jake use to express approval?",
+    "difficulty": 1,
+    "answers": [
+      {
+        "id": 277,
+        "text": "Noice",
+        "isCorrect": true
+      },
+      {
+        "id": 278,
+        "text": "Nice",
+        "isCorrect": false
+      },
+      {
+        "id": 279,
+        "text": "Sweet",
+        "isCorrect": false
+      },
+      {
+        "id": 280,
+        "text": "Dope",
+        "isCorrect": false
+      }
+    ]
+  },
+  {
+    "id": 71,
+    "categoryId": "quotes",
+    "characterId": "jake",
+    "question": "Complete: 'Noice. Smort. ___'",
+    "difficulty": 2,
+    "answers": [
+      {
+        "id": 281,
+        "text": "Toit",
+        "isCorrect": true
+      },
+      {
+        "id": 282,
+        "text": "Cooool",
+        "isCorrect": false
+      },
+      {
+        "id": 283,
+        "text": "Swert",
+        "isCorrect": false
+      },
+      {
+        "id": 284,
+        "text": "Nups",
+        "isCorrect": false
+      }
+    ]
+  },
+  {
+    "id": 72,
+    "categoryId": "quotes",
+    "characterId": "holt",
+    "question": "What does Holt describe as 'the greatest day of my life' with zero expression?",
+    "difficulty": 3,
+    "answers": [
+      {
+        "id": 285,
+        "text": "Various mundane events",
+        "isCorrect": true
+      },
+      {
+        "id": 286,
+        "text": "His wedding day only",
+        "isCorrect": false
+      },
+      {
+        "id": 287,
+        "text": "Getting promoted to captain",
+        "isCorrect": false
+      },
+      {
+        "id": 288,
+        "text": "He never says this",
+        "isCorrect": false
+      }
+    ]
+  },
+  {
+    "id": 73,
+    "categoryId": "quotes",
+    "characterId": "gina",
+    "question": "Who says 'The only thing I'm not good at is modesty, because I'm great at it'?",
+    "difficulty": 2,
+    "answers": [
+      {
+        "id": 289,
+        "text": "Gina Linetti",
+        "isCorrect": true
+      },
+      {
+        "id": 290,
+        "text": "Jake Peralta",
+        "isCorrect": false
+      },
+      {
+        "id": 291,
+        "text": "The Vulture",
+        "isCorrect": false
+      },
+      {
+        "id": 292,
+        "text": "Doug Judy",
+        "isCorrect": false
+      }
+    ]
+  },
+  {
+    "id": 74,
+    "categoryId": "quotes",
+    "characterId": "amy",
+    "question": "What does Amy say she finds attractive that's unusual?",
+    "difficulty": 2,
+    "answers": [
+      {
+        "id": 293,
+        "text": "Organization and rule-following",
+        "isCorrect": true
+      },
+      {
+        "id": 294,
+        "text": "Danger and risk-taking",
+        "isCorrect": false
+      },
+      {
+        "id": 295,
+        "text": "Bad boys",
+        "isCorrect": false
+      },
+      {
+        "id": 296,
+        "text": "Intelligence only",
+        "isCorrect": false
+      }
+    ]
+  },
+  {
+    "id": 75,
+    "categoryId": "quotes",
+    "characterId": "holt",
+    "question": "Complete Holt's insult: 'Wuntch, you ___'",
+    "difficulty": 3,
+    "answers": [
+      {
+        "id": 297,
+        "text": "One of many elaborate, creative insults",
+        "isCorrect": true
+      },
+      {
+        "id": 298,
+        "text": "Are a disgrace",
+        "isCorrect": false
+      },
+      {
+        "id": 299,
+        "text": "Will pay for this",
+        "isCorrect": false
+      },
+      {
+        "id": 300,
+        "text": "Incompetent fool",
+        "isCorrect": false
+      }
+    ]
+  },
+  {
+    "id": 76,
+    "categoryId": "quotes",
+    "characterId": "jake",
+    "question": "What does Jake call an impressive thing? 'That's so ___'",
+    "difficulty": 2,
+    "answers": [
+      {
+        "id": 301,
+        "text": "Toit",
+        "isCorrect": true
+      },
+      {
+        "id": 302,
+        "text": "Sick",
+        "isCorrect": false
+      },
+      {
+        "id": 303,
+        "text": "Rad",
+        "isCorrect": false
+      },
+      {
+        "id": 304,
+        "text": "Lit",
+        "isCorrect": false
+      }
+    ]
+  },
+  {
+    "id": 77,
+    "categoryId": "quotes",
+    "characterId": "charles",
+    "question": "What phrase does Charles use to describe things that sound sexual?",
+    "difficulty": 2,
+    "answers": [
+      {
+        "id": 305,
+        "text": "He doesn't realize they sound sexual",
+        "isCorrect": true
+      },
+      {
+        "id": 306,
+        "text": "'That's what she said'",
+        "isCorrect": false
+      },
+      {
+        "id": 307,
+        "text": "'Phrasing!'",
+        "isCorrect": false
+      },
+      {
+        "id": 308,
+        "text": "He deliberately makes innuendos",
+        "isCorrect": false
+      }
+    ]
+  },
+  {
+    "id": 78,
+    "categoryId": "quotes",
+    "characterId": "holt",
+    "question": "What does Holt say instead of laughing?",
+    "difficulty": 2,
+    "answers": [
+      {
+        "id": 309,
+        "text": "A barely perceptible slight smile",
+        "isCorrect": true
+      },
+      {
+        "id": 310,
+        "text": "He says 'ha' monotonically",
+        "isCorrect": false
+      },
+      {
+        "id": 311,
+        "text": "He slaps the table",
+        "isCorrect": false
+      },
+      {
+        "id": 312,
+        "text": "He nods approvingly",
+        "isCorrect": false
+      }
+    ]
+  },
+  {
+    "id": 79,
+    "categoryId": "quotes",
+    "characterId": "doug-judy",
+    "question": "What song do Jake and Doug Judy sing together?",
+    "difficulty": 2,
+    "answers": [
+      {
+        "id": 313,
+        "text": "'Oh, Rosa' and various duets",
+        "isCorrect": true
+      },
+      {
+        "id": 314,
+        "text": "Only karaoke songs",
+        "isCorrect": false
+      },
+      {
+        "id": 315,
+        "text": "'Don't Stop Believin'",
+        "isCorrect": false
+      },
+      {
+        "id": 316,
+        "text": "They never sing together",
+        "isCorrect": false
+      }
+    ]
+  },
+  {
+    "id": 80,
+    "categoryId": "quotes",
+    "characterId": "rosa",
+    "question": "What is Rosa's typical response when asked about her personal life?",
+    "difficulty": 1,
+    "answers": [
+      {
+        "id": 317,
+        "text": "A threat or 'none of your business'",
+        "isCorrect": true
+      },
+      {
+        "id": 318,
+        "text": "She shares willingly",
+        "isCorrect": false
+      },
+      {
+        "id": 319,
+        "text": "She changes the subject",
+        "isCorrect": false
+      },
+      {
+        "id": 320,
+        "text": "She makes up fake stories",
+        "isCorrect": false
+      }
+    ]
+  },
+  {
+    "id": 81,
+    "categoryId": "quotes",
+    "characterId": "terry",
+    "question": "How does Terry refer to himself in conversation?",
+    "difficulty": 1,
+    "answers": [
+      {
+        "id": 321,
+        "text": "In the third person ('Terry loves yogurt')",
+        "isCorrect": true
+      },
+      {
+        "id": 322,
+        "text": "Always in first person",
+        "isCorrect": false
+      },
+      {
+        "id": 323,
+        "text": "As 'The Sarge'",
+        "isCorrect": false
+      },
+      {
+        "id": 324,
+        "text": "By his last name",
+        "isCorrect": false
+      }
+    ]
+  },
+  {
+    "id": 82,
+    "categoryId": "quotes",
+    "characterId": "jake",
+    "question": "What does Jake call a tight/good situation?",
+    "difficulty": 2,
+    "answers": [
+      {
+        "id": 325,
+        "text": "Toit nups (tight nups)",
+        "isCorrect": true
+      },
+      {
+        "id": 326,
+        "text": "Sick play",
+        "isCorrect": false
+      },
+      {
+        "id": 327,
+        "text": "Smooth move",
+        "isCorrect": false
+      },
+      {
+        "id": 328,
+        "text": "Pro gamer",
+        "isCorrect": false
+      }
+    ]
+  },
+  {
+    "id": 83,
+    "categoryId": "quotes",
+    "characterId": "holt",
+    "question": "What unusual personal fact does Holt share completely deadpan?",
+    "difficulty": 3,
+    "answers": [
+      {
+        "id": 329,
+        "text": "His deeply emotional thoughts, said with zero emotion",
+        "isCorrect": true
+      },
+      {
+        "id": 330,
+        "text": "His love of sports",
+        "isCorrect": false
+      },
+      {
+        "id": 331,
+        "text": "His cooking skills",
+        "isCorrect": false
+      },
+      {
+        "id": 332,
+        "text": "His vacation stories",
+        "isCorrect": false
+      }
+    ]
+  },
+  {
+    "id": 84,
+    "categoryId": "quotes",
+    "characterId": "amy",
+    "question": "What does Amy say when she's panicking?",
+    "difficulty": 2,
+    "answers": [
+      {
+        "id": 333,
+        "text": "She stress-rambles and over-explains",
+        "isCorrect": true
+      },
+      {
+        "id": 334,
+        "text": "She goes completely silent",
+        "isCorrect": false
+      },
+      {
+        "id": 335,
+        "text": "She screams",
+        "isCorrect": false
+      },
+      {
+        "id": 336,
+        "text": "She starts crying",
+        "isCorrect": false
+      }
+    ]
+  },
+  {
+    "id": 85,
+    "categoryId": "quotes",
+    "characterId": "jake",
+    "question": "What sound effect does Jake make for dramatic moments?",
+    "difficulty": 2,
+    "answers": [
+      {
+        "id": 337,
+        "text": "'Bingpot!' (a mix of Bingo and Jackpot)",
+        "isCorrect": true
+      },
+      {
+        "id": 338,
+        "text": "'Kapow!'",
+        "isCorrect": false
+      },
+      {
+        "id": 339,
+        "text": "'Boom!'",
+        "isCorrect": false
+      },
+      {
+        "id": 340,
+        "text": "'Whammo!'",
+        "isCorrect": false
+      }
+    ]
+  },
+  {
+    "id": 86,
+    "categoryId": "episodes",
+    "characterId": "jake",
+    "question": "In the pilot episode, who becomes the new captain of the 99th Precinct?",
+    "difficulty": 1,
+    "answers": [
+      {
+        "id": 341,
+        "text": "Raymond Holt",
+        "isCorrect": true
+      },
+      {
+        "id": 342,
+        "text": "The Vulture",
+        "isCorrect": false
+      },
+      {
+        "id": 343,
+        "text": "Madeline Wuntch",
+        "isCorrect": false
+      },
+      {
+        "id": 344,
+        "text": "Terry Jeffords",
+        "isCorrect": false
+      }
+    ]
+  },
+  {
+    "id": 87,
+    "categoryId": "episodes",
+    "characterId": "holt",
+    "question": "In 'Halloween,' what item is the target of the first annual heist?",
+    "difficulty": 2,
+    "answers": [
+      {
+        "id": 345,
+        "text": "Holt's Medal of Valor",
+        "isCorrect": true
+      },
+      {
+        "id": 346,
+        "text": "Jake's badge",
+        "isCorrect": false
+      },
+      {
+        "id": 347,
+        "text": "A crown",
+        "isCorrect": false
+      },
+      {
+        "id": 348,
+        "text": "A championship belt",
+        "isCorrect": false
+      }
+    ]
+  },
+  {
+    "id": 88,
+    "categoryId": "episodes",
+    "characterId": "jake",
+    "question": "In 'The Bet,' what does Jake have to do when he loses the bet to Amy?",
+    "difficulty": 2,
+    "answers": [
+      {
+        "id": 349,
+        "text": "Go on a date with her (her choice of activity)",
+        "isCorrect": true
+      },
+      {
+        "id": 350,
+        "text": "Wear a uniform for a week",
+        "isCorrect": false
+      },
+      {
+        "id": 351,
+        "text": "Do her paperwork for a month",
+        "isCorrect": false
+      },
+      {
+        "id": 352,
+        "text": "Give her his car",
+        "isCorrect": false
+      }
+    ]
+  },
+  {
+    "id": 89,
+    "categoryId": "episodes",
+    "characterId": "jake",
+    "question": "In 'Johnny and Dora,' what major event happens between Jake and Amy?",
+    "difficulty": 1,
+    "answers": [
+      {
+        "id": 353,
+        "text": "Their first real kiss",
+        "isCorrect": true
+      },
+      {
+        "id": 354,
+        "text": "They go on their first date",
+        "isCorrect": false
+      },
+      {
+        "id": 355,
+        "text": "Jake proposes",
+        "isCorrect": false
+      },
+      {
+        "id": 356,
+        "text": "They break up",
+        "isCorrect": false
+      }
+    ]
+  },
+  {
+    "id": 90,
+    "categoryId": "episodes",
+    "characterId": "jake",
+    "question": "In 'The Fugitive,' which celebrity guest stars as Jake's nemesis?",
+    "difficulty": 3,
+    "answers": [
+      {
+        "id": 357,
+        "text": "Ed Helms",
+        "isCorrect": true
+      },
+      {
+        "id": 358,
+        "text": "Jimmy Smits",
+        "isCorrect": false
+      },
+      {
+        "id": 359,
+        "text": "Sterling K. Brown",
+        "isCorrect": false
+      },
+      {
+        "id": 360,
+        "text": "Lin-Manuel Miranda",
+        "isCorrect": false
+      }
+    ]
+  },
+  {
+    "id": 91,
+    "categoryId": "episodes",
+    "characterId": "amy",
+    "question": "In what episode do Jake and Amy get married?",
+    "difficulty": 2,
+    "answers": [
+      {
+        "id": 361,
+        "text": "Jake & Amy (Season 5 finale)",
+        "isCorrect": true
+      },
+      {
+        "id": 362,
+        "text": "The Big House (Season 5 premiere)",
+        "isCorrect": false
+      },
+      {
+        "id": 363,
+        "text": "Casecation (Season 6)",
+        "isCorrect": false
+      },
+      {
+        "id": 364,
+        "text": "Lights Out (Season 7)",
+        "isCorrect": false
+      }
+    ]
+  },
+  {
+    "id": 92,
+    "categoryId": "episodes",
+    "characterId": "jake",
+    "question": "What happens to Jake and Rosa at the end of Season 4?",
+    "difficulty": 2,
+    "answers": [
+      {
+        "id": 365,
+        "text": "They are framed and sent to prison",
+        "isCorrect": true
+      },
+      {
+        "id": 366,
+        "text": "They get transferred to another precinct",
+        "isCorrect": false
+      },
+      {
+        "id": 367,
+        "text": "They go undercover with the FBI",
+        "isCorrect": false
+      },
+      {
+        "id": 368,
+        "text": "They get suspended",
+        "isCorrect": false
+      }
+    ]
+  },
+  {
+    "id": 93,
+    "categoryId": "episodes",
+    "characterId": "holt",
+    "question": "What is the name of the two-part episode where Holt goes to Florida?",
+    "difficulty": 3,
+    "answers": [
+      {
+        "id": 369,
+        "text": "The Coral Palms",
+        "isCorrect": true
+      },
+      {
+        "id": 370,
+        "text": "Florida Sun",
+        "isCorrect": false
+      },
+      {
+        "id": 371,
+        "text": "The Sunshine State",
+        "isCorrect": false
+      },
+      {
+        "id": 372,
+        "text": "Holt in Paradise",
+        "isCorrect": false
+      }
+    ]
+  },
+  {
+    "id": 94,
+    "categoryId": "episodes",
+    "characterId": "jake",
+    "question": "Why do Jake and Holt go to Florida?",
+    "difficulty": 2,
+    "answers": [
+      {
+        "id": 373,
+        "text": "Witness protection from a mob boss",
+        "isCorrect": true
+      },
+      {
+        "id": 374,
+        "text": "Vacation",
+        "isCorrect": false
+      },
+      {
+        "id": 375,
+        "text": "Undercover operation",
+        "isCorrect": false
+      },
+      {
+        "id": 376,
+        "text": "To arrest a fugitive",
+        "isCorrect": false
+      }
+    ]
+  },
+  {
+    "id": 95,
+    "categoryId": "episodes",
+    "characterId": "jake",
+    "question": "In 'The Box,' who does Jake interrogate for a full episode?",
+    "difficulty": 2,
+    "answers": [
+      {
+        "id": 377,
+        "text": "A dentist played by Sterling K. Brown",
+        "isCorrect": true
+      },
+      {
+        "id": 378,
+        "text": "Doug Judy",
+        "isCorrect": false
+      },
+      {
+        "id": 379,
+        "text": "A corrupt politician",
+        "isCorrect": false
+      },
+      {
+        "id": 380,
+        "text": "The Vulture",
+        "isCorrect": false
+      }
+    ]
+  },
+  {
+    "id": 96,
+    "categoryId": "episodes",
+    "characterId": "terry",
+    "question": "What competition does the squad hold during the Jimmy Jab Games?",
+    "difficulty": 2,
+    "answers": [
+      {
+        "id": 381,
+        "text": "Office Olympics-style competitions",
+        "isCorrect": true
+      },
+      {
+        "id": 382,
+        "text": "A cooking competition",
+        "isCorrect": false
+      },
+      {
+        "id": 383,
+        "text": "Trivia night",
+        "isCorrect": false
+      },
+      {
+        "id": 384,
+        "text": "A dance-off",
+        "isCorrect": false
+      }
+    ]
+  },
+  {
+    "id": 97,
+    "categoryId": "episodes",
+    "characterId": "jake",
+    "question": "In the Season 5 premiere, where is Jake imprisoned?",
+    "difficulty": 2,
+    "answers": [
+      {
+        "id": 385,
+        "text": "A federal prison in South Carolina",
+        "isCorrect": true
+      },
+      {
+        "id": 386,
+        "text": "Rikers Island",
+        "isCorrect": false
+      },
+      {
+        "id": 387,
+        "text": "Sing Sing",
+        "isCorrect": false
+      },
+      {
+        "id": 388,
+        "text": "A county jail in Brooklyn",
+        "isCorrect": false
+      }
+    ]
+  },
+  {
+    "id": 98,
+    "categoryId": "episodes",
+    "characterId": "gina",
+    "question": "How does Gina leave the show?",
+    "difficulty": 2,
+    "answers": [
+      {
+        "id": 389,
+        "text": "She quits to become a social media mogul",
+        "isCorrect": true
+      },
+      {
+        "id": 390,
+        "text": "She gets transferred",
+        "isCorrect": false
+      },
+      {
+        "id": 391,
+        "text": "She gets fired",
+        "isCorrect": false
+      },
+      {
+        "id": 392,
+        "text": "She moves to Los Angeles",
+        "isCorrect": false
+      }
+    ]
+  },
+  {
+    "id": 99,
+    "categoryId": "episodes",
+    "characterId": "doug-judy",
+    "question": "How many Pontiac Bandit episodes are there across the series?",
+    "difficulty": 3,
+    "answers": [
+      {
+        "id": 393,
+        "text": "About 8-9 episodes",
+        "isCorrect": true
+      },
+      {
+        "id": 394,
+        "text": "3 episodes",
+        "isCorrect": false
+      },
+      {
+        "id": 395,
+        "text": "15 episodes",
+        "isCorrect": false
+      },
+      {
+        "id": 396,
+        "text": "Only 2 episodes",
+        "isCorrect": false
+      }
+    ]
+  },
+  {
+    "id": 100,
+    "categoryId": "episodes",
+    "characterId": "holt",
+    "question": "In 'Game Night,' what personal revelation does Rosa make?",
+    "difficulty": 2,
+    "answers": [
+      {
+        "id": 397,
+        "text": "She comes out as bisexual to her colleagues",
+        "isCorrect": true
+      },
+      {
+        "id": 398,
+        "text": "She reveals she has a secret child",
+        "isCorrect": false
+      },
+      {
+        "id": 399,
+        "text": "She announces her retirement",
+        "isCorrect": false
+      },
+      {
+        "id": 400,
+        "text": "She reveals she was in the CIA",
+        "isCorrect": false
+      }
+    ]
+  },
+  {
+    "id": 101,
+    "categoryId": "episodes",
+    "characterId": "jake",
+    "question": "What happens in the series finale 'The Last Day'?",
+    "difficulty": 2,
+    "answers": [
+      {
+        "id": 401,
+        "text": "One final heist — Jake's last day before leaving the NYPD",
+        "isCorrect": true
+      },
+      {
+        "id": 402,
+        "text": "A big villain is caught",
+        "isCorrect": false
+      },
+      {
+        "id": 403,
+        "text": "The precinct shuts down",
+        "isCorrect": false
+      },
+      {
+        "id": 404,
+        "text": "Everyone gets promoted",
+        "isCorrect": false
+      }
+    ]
+  },
+  {
+    "id": 102,
+    "categoryId": "episodes",
+    "characterId": "amy",
+    "question": "In 'Casecation,' what big life topic do Jake and Amy disagree about?",
+    "difficulty": 2,
+    "answers": [
+      {
+        "id": 405,
+        "text": "Whether or not to have kids",
+        "isCorrect": true
+      },
+      {
+        "id": 406,
+        "text": "Whether to move apartments",
+        "isCorrect": false
+      },
+      {
+        "id": 407,
+        "text": "Whether Jake should leave the NYPD",
+        "isCorrect": false
+      },
+      {
+        "id": 408,
+        "text": "Whether Amy should take the captain's exam",
+        "isCorrect": false
+      }
+    ]
+  },
+  {
+    "id": 103,
+    "categoryId": "episodes",
+    "characterId": "jake",
+    "question": "What fake identity does Jake use while in Florida witness protection?",
+    "difficulty": 3,
+    "answers": [
+      {
+        "id": 409,
+        "text": "Larry Sherbert",
+        "isCorrect": true
+      },
+      {
+        "id": 410,
+        "text": "Johnny Franzia",
+        "isCorrect": false
+      },
+      {
+        "id": 411,
+        "text": "Dave Martinez",
+        "isCorrect": false
+      },
+      {
+        "id": 412,
+        "text": "Steve Henderson",
+        "isCorrect": false
+      }
+    ]
+  },
+  {
+    "id": 104,
+    "categoryId": "episodes",
+    "characterId": "holt",
+    "question": "What fake identity does Holt use in Florida?",
+    "difficulty": 3,
+    "answers": [
+      {
+        "id": 413,
+        "text": "Greg Stickney",
+        "isCorrect": true
+      },
+      {
+        "id": 414,
+        "text": "Phil Johnson",
+        "isCorrect": false
+      },
+      {
+        "id": 415,
+        "text": "Mark Williams",
+        "isCorrect": false
+      },
+      {
+        "id": 416,
+        "text": "Bob Anderson",
+        "isCorrect": false
+      }
+    ]
+  },
+  {
+    "id": 105,
+    "categoryId": "episodes",
+    "characterId": "jake",
+    "question": "In 'HalloVeen' (Season 5 Halloween), what does Jake actually steal for?",
+    "difficulty": 1,
+    "answers": [
+      {
+        "id": 417,
+        "text": "To propose to Amy",
+        "isCorrect": true
+      },
+      {
+        "id": 418,
+        "text": "To win the heist belt",
+        "isCorrect": false
+      },
+      {
+        "id": 419,
+        "text": "To prank Holt",
+        "isCorrect": false
+      },
+      {
+        "id": 420,
+        "text": "To impress his dad",
+        "isCorrect": false
+      }
+    ]
+  },
+  {
+    "id": 106,
+    "categoryId": "episodes",
+    "characterId": "charles",
+    "question": "In 'Boyle's Hunch,' what does Charles discover?",
+    "difficulty": 3,
+    "answers": [
+      {
+        "id": 421,
+        "text": "His girlfriend Genevieve's identity theft case",
+        "isCorrect": true
+      },
+      {
+        "id": 422,
+        "text": "A new restaurant",
+        "isCorrect": false
+      },
+      {
+        "id": 423,
+        "text": "Jake's secret",
+        "isCorrect": false
+      },
+      {
+        "id": 424,
+        "text": "A mole in the precinct",
+        "isCorrect": false
+      }
+    ]
+  },
+  {
+    "id": 107,
+    "categoryId": "episodes",
+    "characterId": "holt",
+    "question": "What board game does Holt become obsessed with?",
+    "difficulty": 3,
+    "answers": [
+      {
+        "id": 425,
+        "text": "Monkfish (a made-up strategy game)",
+        "isCorrect": false
+      },
+      {
+        "id": 426,
+        "text": "Settlers of Catan",
+        "isCorrect": false
+      },
+      {
+        "id": 427,
+        "text": "Risk",
+        "isCorrect": false
+      },
+      {
+        "id": 428,
+        "text": "Calvinball (a made-up game) — it's actually chess puzzles",
+        "isCorrect": true
+      }
+    ]
+  },
+  {
+    "id": 108,
+    "categoryId": "episodes",
+    "characterId": "terry",
+    "question": "In 'Moo Moo,' what serious issue does Terry confront?",
+    "difficulty": 2,
+    "answers": [
+      {
+        "id": 429,
+        "text": "Racial profiling by a fellow officer",
+        "isCorrect": true
+      },
+      {
+        "id": 430,
+        "text": "Budget cuts to the precinct",
+        "isCorrect": false
+      },
+      {
+        "id": 431,
+        "text": "His daughters being bullied",
+        "isCorrect": false
+      },
+      {
+        "id": 432,
+        "text": "A workplace discrimination complaint",
+        "isCorrect": false
+      }
+    ]
+  },
+  {
+    "id": 109,
+    "categoryId": "episodes",
+    "characterId": "jake",
+    "question": "Which mob boss puts a hit on Jake, sending him to witness protection?",
+    "difficulty": 2,
+    "answers": [
+      {
+        "id": 433,
+        "text": "Figgis",
+        "isCorrect": true
+      },
+      {
+        "id": 434,
+        "text": "Jimmy Figgis",
+        "isCorrect": false
+      },
+      {
+        "id": 435,
+        "text": "Seamus Murphy",
+        "isCorrect": false
+      },
+      {
+        "id": 436,
+        "text": "Nikolaj's birth father",
+        "isCorrect": false
+      }
+    ]
+  },
+  {
+    "id": 110,
+    "categoryId": "running-gags",
+    "characterId": "jake",
+    "question": "What is the annual Halloween event at the 99th Precinct?",
+    "difficulty": 1,
+    "answers": [
+      {
+        "id": 437,
+        "text": "The Halloween Heist",
+        "isCorrect": true
+      },
+      {
+        "id": 438,
+        "text": "The Halloween Party",
+        "isCorrect": false
+      },
+      {
+        "id": 439,
+        "text": "The Pumpkin Prank",
+        "isCorrect": false
+      },
+      {
+        "id": 440,
+        "text": "Costume Patrol",
+        "isCorrect": false
+      }
+    ]
+  },
+  {
+    "id": 111,
+    "categoryId": "running-gags",
+    "characterId": "holt",
+    "question": "What title does the Halloween Heist winner receive?",
+    "difficulty": 2,
+    "answers": [
+      {
+        "id": 441,
+        "text": "Amazing Human/Genius (varies by year)",
+        "isCorrect": true
+      },
+      {
+        "id": 442,
+        "text": "Heist King",
+        "isCorrect": false
+      },
+      {
+        "id": 443,
+        "text": "Grand Champion",
+        "isCorrect": false
+      },
+      {
+        "id": 444,
+        "text": "Master Detective",
+        "isCorrect": false
+      }
+    ]
+  },
+  {
+    "id": 112,
+    "categoryId": "running-gags",
+    "characterId": "charles",
+    "question": "What running gag involves Charles correcting people about his son's name?",
+    "difficulty": 1,
+    "answers": [
+      {
+        "id": 445,
+        "text": "'It's Nikolaj' (with slightly different pronunciation each time)",
+        "isCorrect": true
+      },
+      {
+        "id": 446,
+        "text": "He spells it out every time",
+        "isCorrect": false
+      },
+      {
+        "id": 447,
+        "text": "He gets angry when people use a nickname",
+        "isCorrect": false
+      },
+      {
+        "id": 448,
+        "text": "He makes people practice saying it",
+        "isCorrect": false
+      }
+    ]
+  },
+  {
+    "id": 113,
+    "categoryId": "running-gags",
+    "characterId": "jake",
+    "question": "What movie does Jake reference in almost every dangerous situation?",
+    "difficulty": 1,
+    "answers": [
+      {
+        "id": 449,
+        "text": "Die Hard",
+        "isCorrect": true
+      },
+      {
+        "id": 450,
+        "text": "Lethal Weapon",
+        "isCorrect": false
+      },
+      {
+        "id": 451,
+        "text": "Speed",
+        "isCorrect": false
+      },
+      {
+        "id": 452,
+        "text": "Point Break",
+        "isCorrect": false
+      }
+    ]
+  },
+  {
+    "id": 114,
+    "categoryId": "running-gags",
+    "characterId": "terry",
+    "question": "What running gag involves Terry referring to himself?",
+    "difficulty": 1,
+    "answers": [
+      {
+        "id": 453,
+        "text": "Speaking in third person ('Terry wants...')",
+        "isCorrect": true
+      },
+      {
+        "id": 454,
+        "text": "Flexing whenever he talks",
+        "isCorrect": false
+      },
+      {
+        "id": 455,
+        "text": "Mentioning his muscles",
+        "isCorrect": false
+      },
+      {
+        "id": 456,
+        "text": "Always standing up",
+        "isCorrect": false
+      }
+    ]
+  },
+  {
+    "id": 115,
+    "categoryId": "running-gags",
+    "characterId": "holt",
+    "question": "What running gag involves Holt and Wuntch's relationship?",
+    "difficulty": 2,
+    "answers": [
+      {
+        "id": 457,
+        "text": "Elaborate insults comparing her to monsters/demons",
+        "isCorrect": true
+      },
+      {
+        "id": 458,
+        "text": "They pretend to be friends in public",
+        "isCorrect": false
+      },
+      {
+        "id": 459,
+        "text": "They send each other passive-aggressive emails",
+        "isCorrect": false
+      },
+      {
+        "id": 460,
+        "text": "They compete in chess matches",
+        "isCorrect": false
+      }
+    ]
+  },
+  {
+    "id": 116,
+    "categoryId": "running-gags",
+    "characterId": "hitchcock",
+    "question": "What running gag involves Hitchcock and Scully's behavior at work?",
+    "difficulty": 1,
+    "answers": [
+      {
+        "id": 461,
+        "text": "They are always eating and being lazy",
+        "isCorrect": true
+      },
+      {
+        "id": 462,
+        "text": "They're always on the phone",
+        "isCorrect": false
+      },
+      {
+        "id": 463,
+        "text": "They try to solve cases but fail",
+        "isCorrect": false
+      },
+      {
+        "id": 464,
+        "text": "They're always at the gym",
+        "isCorrect": false
+      }
+    ]
+  },
+  {
+    "id": 117,
+    "categoryId": "running-gags",
+    "characterId": "amy",
+    "question": "What does Amy compulsively create when she's stressed?",
+    "difficulty": 2,
+    "answers": [
+      {
+        "id": 465,
+        "text": "Binders and organizational systems",
+        "isCorrect": true
+      },
+      {
+        "id": 466,
+        "text": "To-do lists",
+        "isCorrect": false
+      },
+      {
+        "id": 467,
+        "text": "Spreadsheets",
+        "isCorrect": false
+      },
+      {
+        "id": 468,
+        "text": "PowerPoint presentations",
+        "isCorrect": false
+      }
+    ]
+  },
+  {
+    "id": 118,
+    "categoryId": "running-gags",
+    "characterId": "charles",
+    "question": "What running gag involves Charles's food descriptions?",
+    "difficulty": 2,
+    "answers": [
+      {
+        "id": 469,
+        "text": "They sound unintentionally sexual",
+        "isCorrect": true
+      },
+      {
+        "id": 470,
+        "text": "They're always about rare ingredients",
+        "isCorrect": false
+      },
+      {
+        "id": 471,
+        "text": "He mispronounces food names",
+        "isCorrect": false
+      },
+      {
+        "id": 472,
+        "text": "He always brings up French cuisine",
+        "isCorrect": false
+      }
+    ]
+  },
+  {
+    "id": 119,
+    "categoryId": "running-gags",
+    "characterId": "holt",
+    "question": "What is the running gag about Cheddar being a 'common' dog?",
+    "difficulty": 2,
+    "answers": [
+      {
+        "id": 473,
+        "text": "'This bitch? Please.' — Holt is offended when someone insults Cheddar",
+        "isCorrect": true
+      },
+      {
+        "id": 474,
+        "text": "Cheddar runs away every episode",
+        "isCorrect": false
+      },
+      {
+        "id": 475,
+        "text": "Cheddar bites everyone",
+        "isCorrect": false
+      },
+      {
+        "id": 476,
+        "text": "Cheddar only likes Kevin",
+        "isCorrect": false
+      }
+    ]
+  },
+  {
+    "id": 120,
+    "categoryId": "running-gags",
+    "characterId": "gina",
+    "question": "What is Gina's running gag about her self-importance?",
+    "difficulty": 1,
+    "answers": [
+      {
+        "id": 477,
+        "text": "She compares herself to a goddess/queen constantly",
+        "isCorrect": true
+      },
+      {
+        "id": 478,
+        "text": "She claims to be the boss",
+        "isCorrect": false
+      },
+      {
+        "id": 479,
+        "text": "She demands a raise every episode",
+        "isCorrect": false
+      },
+      {
+        "id": 480,
+        "text": "She takes credit for solving cases",
+        "isCorrect": false
+      }
+    ]
+  },
+  {
+    "id": 121,
+    "categoryId": "running-gags",
+    "characterId": "rosa",
+    "question": "What is the running gag about Rosa's apartment?",
+    "difficulty": 2,
+    "answers": [
+      {
+        "id": 481,
+        "text": "Nobody knows where she lives / it's surprisingly decorated",
+        "isCorrect": true
+      },
+      {
+        "id": 482,
+        "text": "It's filled with weapons",
+        "isCorrect": false
+      },
+      {
+        "id": 483,
+        "text": "She lives in a warehouse",
+        "isCorrect": false
+      },
+      {
+        "id": 484,
+        "text": "She has 10 cats",
+        "isCorrect": false
+      }
+    ]
+  },
+  {
+    "id": 122,
+    "categoryId": "running-gags",
+    "characterId": "jake",
+    "question": "What running gag involves Jake's financial situation?",
+    "difficulty": 2,
+    "answers": [
+      {
+        "id": 485,
+        "text": "He's always broke and in debt",
+        "isCorrect": true
+      },
+      {
+        "id": 486,
+        "text": "He's secretly wealthy",
+        "isCorrect": false
+      },
+      {
+        "id": 487,
+        "text": "He gambles at the track",
+        "isCorrect": false
+      },
+      {
+        "id": 488,
+        "text": "He lends money he doesn't have",
+        "isCorrect": false
+      }
+    ]
+  },
+  {
+    "id": 123,
+    "categoryId": "running-gags",
+    "characterId": "vulture",
+    "question": "What is the Vulture's running gag?",
+    "difficulty": 1,
+    "answers": [
+      {
+        "id": 489,
+        "text": "He swoops in to steal credit for other detectives' cases",
+        "isCorrect": true
+      },
+      {
+        "id": 490,
+        "text": "He eats everyone's lunch",
+        "isCorrect": false
+      },
+      {
+        "id": 491,
+        "text": "He shows up uninvited to parties",
+        "isCorrect": false
+      },
+      {
+        "id": 492,
+        "text": "He challenges people to arm wrestling",
+        "isCorrect": false
+      }
+    ]
+  },
+  {
+    "id": 124,
+    "categoryId": "running-gags",
+    "characterId": "scully",
+    "question": "What running gag involves Scully's feet?",
+    "difficulty": 2,
+    "answers": [
+      {
+        "id": 493,
+        "text": "His feet are disgusting and he always takes his shoes off",
+        "isCorrect": true
+      },
+      {
+        "id": 494,
+        "text": "He wears mismatched shoes",
+        "isCorrect": false
+      },
+      {
+        "id": 495,
+        "text": "He has a foot tattoo",
+        "isCorrect": false
+      },
+      {
+        "id": 496,
+        "text": "He only wears sandals",
+        "isCorrect": false
+      }
+    ]
+  },
+  {
+    "id": 125,
+    "categoryId": "running-gags",
+    "characterId": "doug-judy",
+    "question": "What is the running gag about Jake and Doug Judy's friendship?",
+    "difficulty": 2,
+    "answers": [
+      {
+        "id": 497,
+        "text": "Jake keeps trying to arrest him but they become friends",
+        "isCorrect": true
+      },
+      {
+        "id": 498,
+        "text": "They went to school together",
+        "isCorrect": false
+      },
+      {
+        "id": 499,
+        "text": "Doug Judy helps solve cases for free",
+        "isCorrect": false
+      },
+      {
+        "id": 500,
+        "text": "They have a podcast together",
+        "isCorrect": false
+      }
+    ]
+  },
+  {
+    "id": 126,
+    "categoryId": "running-gags",
+    "characterId": "holt",
+    "question": "What is the running gag about Captain Holt's sense of humor?",
+    "difficulty": 1,
+    "answers": [
+      {
+        "id": 501,
+        "text": "He's hilarious but completely deadpan/monotone",
+        "isCorrect": true
+      },
+      {
+        "id": 502,
+        "text": "He tells dad jokes constantly",
+        "isCorrect": false
+      },
+      {
+        "id": 503,
+        "text": "He has no sense of humor at all",
+        "isCorrect": false
+      },
+      {
+        "id": 504,
+        "text": "He only laughs at his own jokes",
+        "isCorrect": false
+      }
+    ]
+  },
+  {
+    "id": 127,
+    "categoryId": "running-gags",
+    "characterId": "amy",
+    "question": "What is Amy's running gag about her competitiveness?",
+    "difficulty": 2,
+    "answers": [
+      {
+        "id": 505,
+        "text": "She's extremely competitive, especially about organization",
+        "isCorrect": true
+      },
+      {
+        "id": 506,
+        "text": "She challenges people to debates",
+        "isCorrect": false
+      },
+      {
+        "id": 507,
+        "text": "She keeps a scoreboard on her desk",
+        "isCorrect": false
+      },
+      {
+        "id": 508,
+        "text": "She trash talks constantly",
+        "isCorrect": false
+      }
+    ]
+  },
+  {
+    "id": 128,
+    "categoryId": "running-gags",
+    "characterId": "jake",
+    "question": "What does Jake often say he'll do 'when the time is right' but never does?",
+    "difficulty": 3,
+    "answers": [
+      {
+        "id": 509,
+        "text": "Clean his desk / get organized",
+        "isCorrect": true
+      },
+      {
+        "id": 510,
+        "text": "Learn to cook",
+        "isCorrect": false
+      },
+      {
+        "id": 511,
+        "text": "Read a book",
+        "isCorrect": false
+      },
+      {
+        "id": 512,
+        "text": "Go to the gym",
+        "isCorrect": false
+      }
+    ]
+  },
+  {
+    "id": 129,
+    "categoryId": "running-gags",
+    "characterId": "holt",
+    "question": "What running gag involves Holt's 'tells' when he's lying?",
+    "difficulty": 3,
+    "answers": [
+      {
+        "id": 513,
+        "text": "His face doesn't change, making it impossible to tell",
+        "isCorrect": true
+      },
+      {
+        "id": 514,
+        "text": "He blinks rapidly",
+        "isCorrect": false
+      },
+      {
+        "id": 515,
+        "text": "He touches his ear",
+        "isCorrect": false
+      },
+      {
+        "id": 516,
+        "text": "He looks to the left",
+        "isCorrect": false
+      }
+    ]
+  },
+  {
+    "id": 130,
+    "categoryId": "relationships",
+    "characterId": "jake",
+    "question": "When do Jake and Amy start officially dating?",
+    "difficulty": 2,
+    "answers": [
+      {
+        "id": 517,
+        "text": "After their undercover kiss in 'Johnny and Dora'",
+        "isCorrect": true
+      },
+      {
+        "id": 518,
+        "text": "In the pilot episode",
+        "isCorrect": false
+      },
+      {
+        "id": 519,
+        "text": "After the first Halloween Heist",
+        "isCorrect": false
+      },
+      {
+        "id": 520,
+        "text": "In the Season 1 finale",
+        "isCorrect": false
+      }
+    ]
+  },
+  {
+    "id": 131,
+    "categoryId": "relationships",
+    "characterId": "jake",
+    "question": "How does Jake propose to Amy?",
+    "difficulty": 2,
+    "answers": [
+      {
+        "id": 521,
+        "text": "During the Halloween Heist (HalloVeen)",
+        "isCorrect": true
+      },
+      {
+        "id": 522,
+        "text": "At a fancy restaurant",
+        "isCorrect": false
+      },
+      {
+        "id": 523,
+        "text": "At the precinct during a case",
+        "isCorrect": false
+      },
+      {
+        "id": 524,
+        "text": "On a rooftop",
+        "isCorrect": false
+      }
+    ]
+  },
+  {
+    "id": 132,
+    "categoryId": "relationships",
+    "characterId": "amy",
+    "question": "What happens during Jake and Amy's wedding ceremony?",
+    "difficulty": 2,
+    "answers": [
+      {
+        "id": 525,
+        "text": "A bomb threat forces them to marry in the street",
+        "isCorrect": true
+      },
+      {
+        "id": 526,
+        "text": "Holt officiated perfectly",
+        "isCorrect": false
+      },
+      {
+        "id": 527,
+        "text": "Doug Judy crashes the wedding",
+        "isCorrect": false
+      },
+      {
+        "id": 528,
+        "text": "The Vulture steals the rings",
+        "isCorrect": false
+      }
+    ]
+  },
+  {
+    "id": 133,
+    "categoryId": "relationships",
+    "characterId": "amy",
+    "question": "What is the name of Jake and Amy's baby?",
+    "difficulty": 1,
+    "answers": [
+      {
+        "id": 529,
+        "text": "Mac (McClane)",
+        "isCorrect": true
+      },
+      {
+        "id": 530,
+        "text": "Bruce",
+        "isCorrect": false
+      },
+      {
+        "id": 531,
+        "text": "John",
+        "isCorrect": false
+      },
+      {
+        "id": 532,
+        "text": "Hans",
+        "isCorrect": false
+      }
+    ]
+  },
+  {
+    "id": 134,
+    "categoryId": "relationships",
+    "characterId": "holt",
+    "question": "How long have Holt and Kevin been together?",
+    "difficulty": 2,
+    "answers": [
+      {
+        "id": 533,
+        "text": "Over 25 years (married for most of it)",
+        "isCorrect": true
+      },
+      {
+        "id": 534,
+        "text": "About 10 years",
+        "isCorrect": false
+      },
+      {
+        "id": 535,
+        "text": "They met during the show",
+        "isCorrect": false
+      },
+      {
+        "id": 536,
+        "text": "About 5 years",
+        "isCorrect": false
+      }
+    ]
+  },
+  {
+    "id": 135,
+    "categoryId": "relationships",
+    "characterId": "charles",
+    "question": "Who does Charles Boyle end up with?",
+    "difficulty": 2,
+    "answers": [
+      {
+        "id": 537,
+        "text": "Genevieve",
+        "isCorrect": true
+      },
+      {
+        "id": 538,
+        "text": "Vivian",
+        "isCorrect": false
+      },
+      {
+        "id": 539,
+        "text": "Rosa",
+        "isCorrect": false
+      },
+      {
+        "id": 540,
+        "text": "Gina",
+        "isCorrect": false
+      }
+    ]
+  },
+  {
+    "id": 136,
+    "categoryId": "relationships",
+    "characterId": "charles",
+    "question": "Who did Charles have a long-standing crush on before meeting Genevieve?",
+    "difficulty": 1,
+    "answers": [
+      {
+        "id": 541,
+        "text": "Rosa Diaz",
+        "isCorrect": true
+      },
+      {
+        "id": 542,
+        "text": "Amy Santiago",
+        "isCorrect": false
+      },
+      {
+        "id": 543,
+        "text": "Gina Linetti",
+        "isCorrect": false
+      },
+      {
+        "id": 544,
+        "text": "A woman from another precinct",
+        "isCorrect": false
+      }
+    ]
+  },
+  {
+    "id": 137,
+    "categoryId": "relationships",
+    "characterId": "rosa",
+    "question": "What is the name of Rosa's girlfriend from Season 6?",
+    "difficulty": 3,
+    "answers": [
+      {
+        "id": 545,
+        "text": "Jocelyn",
+        "isCorrect": true
+      },
+      {
+        "id": 546,
+        "text": "Jennifer",
+        "isCorrect": false
+      },
+      {
+        "id": 547,
+        "text": "Jessica",
+        "isCorrect": false
+      },
+      {
+        "id": 548,
+        "text": "Jasmine",
+        "isCorrect": false
+      }
+    ]
+  },
+  {
+    "id": 138,
+    "categoryId": "relationships",
+    "characterId": "gina",
+    "question": "Who does Gina have a brief relationship with that shocks everyone?",
+    "difficulty": 2,
+    "answers": [
+      {
+        "id": 549,
+        "text": "Charles Boyle (they hooked up)",
+        "isCorrect": true
+      },
+      {
+        "id": 550,
+        "text": "Jake Peralta",
+        "isCorrect": false
+      },
+      {
+        "id": 551,
+        "text": "Terry Jeffords",
+        "isCorrect": false
+      },
+      {
+        "id": 552,
+        "text": "The Vulture",
+        "isCorrect": false
+      }
+    ]
+  },
+  {
+    "id": 139,
+    "categoryId": "relationships",
+    "characterId": "terry",
+    "question": "What is the name of Terry's wife?",
+    "difficulty": 2,
+    "answers": [
+      {
+        "id": 553,
+        "text": "Sharon",
+        "isCorrect": true
+      },
+      {
+        "id": 554,
+        "text": "Sandra",
+        "isCorrect": false
+      },
+      {
+        "id": 555,
+        "text": "Susan",
+        "isCorrect": false
+      },
+      {
+        "id": 556,
+        "text": "Stephanie",
+        "isCorrect": false
+      }
+    ]
+  },
+  {
+    "id": 140,
+    "categoryId": "relationships",
+    "characterId": "jake",
+    "question": "Who is Jake's closest friend at the precinct?",
+    "difficulty": 1,
+    "answers": [
+      {
+        "id": 557,
+        "text": "Charles Boyle",
+        "isCorrect": true
+      },
+      {
+        "id": 558,
+        "text": "Rosa Diaz",
+        "isCorrect": false
+      },
+      {
+        "id": 559,
+        "text": "Terry Jeffords",
+        "isCorrect": false
+      },
+      {
+        "id": 560,
+        "text": "Amy Santiago",
+        "isCorrect": false
+      }
+    ]
+  },
+  {
+    "id": 141,
+    "categoryId": "relationships",
+    "characterId": "holt",
+    "question": "How does Holt describe his relationship with Wuntch?",
+    "difficulty": 2,
+    "answers": [
+      {
+        "id": 561,
+        "text": "As bitter enemies/nemeses",
+        "isCorrect": true
+      },
+      {
+        "id": 562,
+        "text": "As professional rivals",
+        "isCorrect": false
+      },
+      {
+        "id": 563,
+        "text": "As former partners",
+        "isCorrect": false
+      },
+      {
+        "id": 564,
+        "text": "As ex-spouses",
+        "isCorrect": false
+      }
+    ]
+  },
+  {
+    "id": 142,
+    "categoryId": "relationships",
+    "characterId": "jake",
+    "question": "What is the nature of Jake and Doug Judy's relationship?",
+    "difficulty": 1,
+    "answers": [
+      {
+        "id": 565,
+        "text": "Frenemies — a criminal and the cop who keeps trying to catch him",
+        "isCorrect": true
+      },
+      {
+        "id": 566,
+        "text": "Childhood best friends",
+        "isCorrect": false
+      },
+      {
+        "id": 567,
+        "text": "College roommates",
+        "isCorrect": false
+      },
+      {
+        "id": 568,
+        "text": "Distant cousins",
+        "isCorrect": false
+      }
+    ]
+  },
+  {
+    "id": 143,
+    "categoryId": "relationships",
+    "characterId": "hitchcock",
+    "question": "What is revealed about Hitchcock's love life?",
+    "difficulty": 3,
+    "answers": [
+      {
+        "id": 569,
+        "text": "He's been married multiple times",
+        "isCorrect": true
+      },
+      {
+        "id": 570,
+        "text": "He's never been in a relationship",
+        "isCorrect": false
+      },
+      {
+        "id": 571,
+        "text": "He's been with the same person for 30 years",
+        "isCorrect": false
+      },
+      {
+        "id": 572,
+        "text": "He's secretly dating someone at the precinct",
+        "isCorrect": false
+      }
+    ]
+  },
+  {
+    "id": 144,
+    "categoryId": "relationships",
+    "characterId": "amy",
+    "question": "What does Amy initially think of Jake?",
+    "difficulty": 2,
+    "answers": [
+      {
+        "id": 573,
+        "text": "He's immature and annoying (but talented)",
+        "isCorrect": true
+      },
+      {
+        "id": 574,
+        "text": "She has a crush on him from day one",
+        "isCorrect": false
+      },
+      {
+        "id": 575,
+        "text": "She thinks he's incompetent",
+        "isCorrect": false
+      },
+      {
+        "id": 576,
+        "text": "She's indifferent to him",
+        "isCorrect": false
+      }
+    ]
+  },
+  {
+    "id": 145,
+    "categoryId": "relationships",
+    "characterId": "holt",
+    "question": "How does Holt feel about Jake at the start of the show?",
+    "difficulty": 2,
+    "answers": [
+      {
+        "id": 577,
+        "text": "Sees potential but is frustrated by his immaturity",
+        "isCorrect": true
+      },
+      {
+        "id": 578,
+        "text": "Immediately respects him",
+        "isCorrect": false
+      },
+      {
+        "id": 579,
+        "text": "Wants to transfer him",
+        "isCorrect": false
+      },
+      {
+        "id": 580,
+        "text": "Doesn't notice him at all",
+        "isCorrect": false
+      }
+    ]
+  },
+  {
+    "id": 146,
+    "categoryId": "relationships",
+    "characterId": "jake",
+    "question": "What does Jake call Captain Holt in their mentor relationship?",
+    "difficulty": 3,
+    "answers": [
+      {
+        "id": 581,
+        "text": "He sees Holt as a father figure (but struggles to say it)",
+        "isCorrect": true
+      },
+      {
+        "id": 582,
+        "text": "He always calls him 'sir'",
+        "isCorrect": false
+      },
+      {
+        "id": 583,
+        "text": "He calls him 'Dad' openly",
+        "isCorrect": false
+      },
+      {
+        "id": 584,
+        "text": "He calls him 'Cap'",
+        "isCorrect": false
+      }
+    ]
+  },
+  {
+    "id": 147,
+    "categoryId": "relationships",
+    "characterId": "rosa",
+    "question": "How does Rosa react when Charles reveals his crush on her?",
+    "difficulty": 2,
+    "answers": [
+      {
+        "id": 585,
+        "text": "She's uncomfortable and not interested",
+        "isCorrect": true
+      },
+      {
+        "id": 586,
+        "text": "She dates him briefly",
+        "isCorrect": false
+      },
+      {
+        "id": 587,
+        "text": "She transfers to avoid him",
+        "isCorrect": false
+      },
+      {
+        "id": 588,
+        "text": "She's secretly flattered",
+        "isCorrect": false
+      }
+    ]
+  },
+  {
+    "id": 148,
+    "categoryId": "relationships",
+    "characterId": "gina",
+    "question": "What is the nature of Gina and Jake's relationship?",
+    "difficulty": 2,
+    "answers": [
+      {
+        "id": 589,
+        "text": "Childhood friends (they grew up together)",
+        "isCorrect": true
+      },
+      {
+        "id": 590,
+        "text": "They met at the precinct",
+        "isCorrect": false
+      },
+      {
+        "id": 591,
+        "text": "They're cousins",
+        "isCorrect": false
+      },
+      {
+        "id": 592,
+        "text": "They went to college together",
+        "isCorrect": false
+      }
+    ]
+  },
+  {
+    "id": 149,
+    "categoryId": "relationships",
+    "characterId": "charles",
+    "question": "How does Charles show his loyalty to Jake?",
+    "difficulty": 1,
+    "answers": [
+      {
+        "id": 593,
+        "text": "Extreme devotion — he took a bullet for Jake",
+        "isCorrect": true
+      },
+      {
+        "id": 594,
+        "text": "He does Jake's paperwork",
+        "isCorrect": false
+      },
+      {
+        "id": 595,
+        "text": "He buys Jake lunch every day",
+        "isCorrect": false
+      },
+      {
+        "id": 596,
+        "text": "He covers Jake's shifts",
+        "isCorrect": false
+      }
+    ]
+  }
+]
