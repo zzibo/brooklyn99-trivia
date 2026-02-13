@@ -21,4 +21,5 @@ export const BOSS_ORDER = [
 
 export const STORAGE_KEYS = {
   HIGHEST_BOSS: "b99-highest-boss",
+  BATTLE_SAVE: "b99-battle-save",
 } as const;

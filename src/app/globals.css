@@ -47,47 +47,46 @@
   --radius-3xl: calc(var(--radius) + 12px);
   --radius-4xl: calc(var(--radius) + 16px);
 
-  /* Stardew Valley inspired colors */
-  --color-stardew-green: #4a7c59;
-  --color-stardew-brown: #8b6914;
-  --color-stardew-cream: #f5e6c8;
-  --color-stardew-sky: #87ceeb;
-  --color-stardew-wood: #c4a265;
-  --color-stardew-dark: #2d1b00;
-  --color-stardew-gold: #ffd700;
-  --color-stardew-red: #c0392b;
-  --color-stardew-blue: #2980b9;
-
-  /* B99 badge blue */
-  --color-b99-blue: #1e3a5f;
+  /* Brooklyn 99 Precinct colors */
+  --color-b99-blue: #2c5f8d;
+  --color-b99-dark-blue: #1a3d5c;
+  --color-b99-light-blue: #4a7fa6;
   --color-b99-gold: #d4a843;
+  --color-b99-gray: #6b7a8f;
+  --color-b99-light-gray: #a8b4c4;
+  --color-b99-cream: #e8ecf0;
+  --color-b99-white: #f4f6f9;
+  --color-b99-dark: #1a1f2e;
+  --color-b99-red: #d63031;
+  --color-b99-green: #27ae60;
+  --color-b99-navy: #34495e;
 }
 
 :root {
   --radius: 0.625rem;
-  --background: #f5e6c8;
-  --foreground: #2d1b00;
-  --card: #faf0dc;
-  --card-foreground: #2d1b00;
-  --popover: #faf0dc;
-  --popover-foreground: #2d1b00;
-  --primary: #4a7c59;
-  --primary-foreground: #f5e6c8;
-  --secondary: #c4a265;
-  --secondary-foreground: #2d1b00;
-  --muted: #e8d5b0;
-  --muted-foreground: #6b4c1e;
-  --accent: #8b6914;
-  --accent-foreground: #f5e6c8;
-  --destructive: #c0392b;
-  --border: #8b6914;
-  --input: #c4a265;
-  --ring: #4a7c59;
-  --chart-1: #4a7c59;
-  --chart-2: #2980b9;
+  --background: #d4dce6;
+  --foreground: #1a1f2e;
+  --card: #f4f6f9;
+  --card-foreground: #1a1f2e;
+  --popover: #f4f6f9;
+  --popover-foreground: #1a1f2e;
+  --primary: #2c5f8d;
+  --primary-foreground: #f4f6f9;
+  --secondary: #6b7a8f;
+  --secondary-foreground: #f4f6f9;
+  --muted: #a8b4c4;
+  --muted-foreground: #475569;
+  --accent: #d4a843;
+  --accent-foreground: #1a1f2e;
+  --destructive: #d63031;
+  --border: #34495e;
+  --input: #a8b4c4;
+  --ring: #2c5f8d;
+  --chart-1: #2c5f8d;
+  --chart-2: #4a7fa6;
   --chart-3: #d4a843;
-  --chart-4: #c0392b;
-  --chart-5: #8b6914;
+  --chart-4: #d63031;
+  --chart-5: #27ae60;
 }
 
 @layer base {
@@ -198,4 +197,67 @@
 
 .animate-fade-in-up {
   animation: fade-in-up 0.3s ease-out;
+}
+
+/* Background slow pan up */
+@keyframes bg-pan-up {
+  from {
+    background-position: center 60%;
+  }
+  to {
+    background-position: center 40%;
+  }
+}
+
+.animate-bg-pan-up {
+  animation: bg-pan-up 8s ease-out forwards;
+}
+
+/* Title fade in */
+@keyframes title-fade-in {
+  from {
+    opacity: 0;
+    transform: translateY(12px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animate-title-fade-in {
+  opacity: 0;
+  animation: title-fade-in 1.2s ease-out 0.8s forwards;
+}
+
+/* Button fade in (delayed after title) */
+.animate-button-fade-in {
+  opacity: 0;
+  animation: title-fade-in 1s ease-out 1.8s forwards;
+}
+
+/* Brooklyn 99 color utilities */
+.bg-b99-blue {
+  background-color: var(--color-b99-blue);
+}
+
+.bg-b99-green {
+  background-color: var(--color-b99-green);
+}
+
+.bg-b99-gold {
+  background-color: var(--color-b99-gold);
+}
+
+/* Health bar colors */
+.bg-hp-green {
+  background-color: #22c55e !important;
+}
+
+.bg-hp-yellow {
+  background-color: #facc15 !important;
+}
+
+.bg-hp-red {
+  background-color: #ef4444 !important;
 }
