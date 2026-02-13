@@ -1,49 +1,24 @@
-export const STORAGE_KEYS = {
-  FSRS_CARDS: "b99-fsrs-cards",
-  USER_STATS: "b99-user-stats",
-} as const;
+export const PLAYER_DAMAGE_ON_WRONG: Record<number, number> = {
+  1: 2, // easy question wrong = 2 HP lost (you should've known)
+  2: 1, // medium wrong = 1 HP
+  3: 1, // hard wrong = 1 HP (lighter punishment)
+};
 
-export const RANKS = [
-  { name: "Beat Cop", minMastered: 0 },
-  { name: "Patrol Officer", minMastered: 10 },
-  { name: "Detective", minMastered: 30 },
-  { name: "Sergeant", minMastered: 60 },
-  { name: "Lieutenant", minMastered: 90 },
-  { name: "Captain", minMastered: 120 },
-  { name: "Commissioner", minMastered: 150 },
-] as const;
+export const BOSS_DAMAGE_ON_CORRECT: Record<number, number> = {
+  1: 1, // easy correct = 1 bar
+  2: 1, // medium correct = 1 bar
+  3: 2, // hard correct = 2 bars (big brain reward)
+};
 
-export const DEFAULT_STATS = {
-  totalReviews: 0,
-  correctAnswers: 0,
-  streak: 0,
-  longestStreak: 0,
-  reviewsByDate: {},
-  categoryProgress: {},
-} as const;
-
-export const CHARACTERS = [
+export const BOSS_ORDER = [
+  "charles",
+  "gina",
   "jake",
   "amy",
   "rosa",
-  "terry",
-  "charles",
-  "gina",
   "holt",
-  "hitchcock",
-  "scully",
-  "doug-judy",
-  "vulture",
-  "wuntch",
 ] as const;
 
-export const EXPRESSIONS = ["neutral", "happy", "sad"] as const;
-
-export const BACKGROUNDS = [
-  "bullpen",
-  "holts-office",
-  "shaws-bar",
-  "evidence-room",
-  "interrogation-room",
-  "nikolajs-house",
-] as const;
+export const STORAGE_KEYS = {
+  HIGHEST_BOSS: "b99-highest-boss",
+} as const;
