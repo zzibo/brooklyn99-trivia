@@ -34,14 +34,17 @@ export default function BattlePage() {
     nextQuestion,
     nextBoss,
     bossList,
+    hasSave,
   } = useBattle(playerCharacter || undefined);
 
   const { play, startBgMusic, stopBgMusic } = useSound();
   const prevPhaseRef = useRef(state.phase);
 
   useEffect(() => {
-    startGame();
-  }, [startGame]);
+    if (!hasSave) {
+      startGame();
+    }
+  }, [hasSave, startGame]);
 
   // B99 theme plays during questions, stops on overlays
   useEffect(() => {
@@ -122,6 +125,8 @@ export default function BattlePage() {
             boss={currentBoss}
             expression={state.expression}
             dialog={state.currentDialog}
+            score={state.score}
+            currentBossIndex={state.currentBossIndex}
             onStartBoss={startBoss}
             onNextBoss={nextBoss}
             onStartGame={startGame}
