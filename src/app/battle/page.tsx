@@ -1,6 +1,6 @@
 "use client";
 
-import { useEffect, useRef } from "react";
+import { Suspense, useEffect, useRef } from "react";
 import { useSearchParams, useRouter } from "next/navigation";
 import { SceneBackground } from "@/components/pixel/scene-background";
 import { BattleHud } from "@/components/battle/battle-hud";
@@ -12,6 +12,14 @@ import { useBattle } from "@/hooks/use-battle";
 import { useSound } from "@/hooks/use-sound";
 
 export default function BattlePage() {
+  return (
+    <Suspense>
+      <BattleContent />
+    </Suspense>
+  );
+}
+
+function BattleContent() {
   const searchParams = useSearchParams();
   const router = useRouter();
   const playerCharacter = searchParams.get("character");
