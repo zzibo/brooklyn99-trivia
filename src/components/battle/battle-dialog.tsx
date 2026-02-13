@@ -51,13 +51,18 @@ export function BattleDialog({
       <PixelBorder className="animate-fade-in-up w-full max-w-md space-y-6 bg-card text-center">
         {phase === "victory" ? (
           <>
-            <h2 className="font-pixel text-sm text-accent md:text-base">VICTORY!</h2>
+            <h2 className="font-pixel text-base text-accent md:text-lg">
+              NINE NINE!
+            </h2>
             <p className="font-pixel text-[10px] leading-relaxed">
-              You defeated all {totalBosses} {totalBosses === 1 ? 'boss' : 'bosses'}! You are the ultimate Nine-Nine trivia champion!
+              You defeated all {totalBosses} {totalBosses === 1 ? "boss" : "bosses"}!
             </p>
+            <div className="font-pixel text-lg text-accent">
+              Final Score: {score}
+            </div>
             <div className="flex flex-wrap justify-center gap-2">
-              {defeatedBosses.map((b) => (
-                <div key={b.id} className="bg-white rounded-lg p-2">
+              {defeatedBosses?.map((b) => (
+                <div key={b.id} className="bg-white rounded-lg p-1">
                   <CharacterSprite
                     characterId={b.id}
                     expression="sad"
@@ -66,10 +71,11 @@ export function BattleDialog({
                 </div>
               ))}
             </div>
+            <p className="font-pixel text-[10px] text-muted-foreground italic">
+              &ldquo;{VICTORY_QUOTES[Math.floor(Math.random() * VICTORY_QUOTES.length)]}&rdquo;
+            </p>
             <Link href="/select">
-              <PixelButton size="lg">
-                Play Again
-              </PixelButton>
+              <PixelButton size="lg">Play Again</PixelButton>
             </Link>
           </>
         ) : (
