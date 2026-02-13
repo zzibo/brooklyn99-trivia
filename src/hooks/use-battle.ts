@@ -1,6 +1,6 @@
 "use client";
 
-import { useState, useCallback, useMemo } from "react";
+import { useState, useCallback, useMemo, useEffect, useRef } from "react";
 import type {
   BattleState,
   Boss,
@@ -14,7 +14,9 @@ import {
   STORAGE_KEYS,
 } from "@/lib/constants";
 import { BOSSES } from "@/data/bosses";
-import { getQuestionsForBoss } from "@/lib/questions";
+import { getRandomQuestionsForBoss } from "@/lib/questions";
+
+const QUESTIONS_PER_BOSS = 10;
 
 // ---------------------------------------------------------------------------
 // Helpers
@@ -28,6 +30,14 @@ function shuffleArray<T>(array: T[]): T[] {
     [copy[i], copy[j]] = [copy[j], copy[i]];
   }
   return copy;
+}
+
+/** Shuffle the answers within each question */
+function shuffleQuestionAnswers(questions: Question[]): Question[] {
+  return questions.map((question) => ({
+    ...question,
+    answers: shuffleArray(question.answers),
+  }));
 }
 
 /**
@@ -64,18 +74,49 @@ function pickDialog(
 }
 
 // ---------------------------------------------------------------------------
+// Save / Load helpers
+// ---------------------------------------------------------------------------
+
+interface SavedGame {
+  battleState: BattleState;
+  playerCharacterId: string | undefined;
+  shuffledQuestions: Question[];
+}
+
+function saveGame(state: BattleState, playerCharacterId: string | undefined, questions: Question[]) {
+  try {
+    const data: SavedGame = { battleState: state, playerCharacterId, shuffledQuestions: questions };
+    localStorage.setItem(STORAGE_KEYS.BATTLE_SAVE, JSON.stringify(data));
+  } catch { /* localStorage unavailable */ }
+}
+
+function loadGame(playerCharacterId: string | undefined): SavedGame | null {
+  try {
+    const raw = localStorage.getItem(STORAGE_KEYS.BATTLE_SAVE);
+    if (!raw) return null;
+    const data: SavedGame = JSON.parse(raw);
+    if (data.playerCharacterId !== playerCharacterId) return null;
+    return data;
+  } catch { return null; }
+}
+
+function clearSave() {
+  try { localStorage.removeItem(STORAGE_KEYS.BATTLE_SAVE); } catch { /* localStorage unavailable */ }
+}
+
+// ---------------------------------------------------------------------------
 // Initial state factory
 // ---------------------------------------------------------------------------
 
-function createInitialState(bossIndex: number): BattleState {
-  const boss = BOSSES[bossIndex];
+function createInitialState(bossIndex: number, bossList: Boss[]): BattleState {
+  const boss = bossList[bossIndex];
   return {
     currentBossIndex: bossIndex,
     currentQuestionIndex: 0,
     playerHp: boss.playerHp,
     playerMaxHp: boss.playerHp,
-    bossHp: 8,
-    bossMaxHp: 8,
+    bossHp: QUESTIONS_PER_BOSS,
+    bossMaxHp: QUESTIONS_PER_BOSS,
     phase: "intro",
     selectedAnswerId: null,
     isCorrect: null,
@@ -83,6 +124,7 @@ function createInitialState(bossIndex: number): BattleState {
     currentDialog: "",
     usedDialog: {},
     questionsAnswered: 0,
+    score: 0,
   };
 }
 
@@ -90,20 +132,34 @@ function createInitialState(bossIndex: number): BattleState {
 // Hook
 // ---------------------------------------------------------------------------
 
-export function useBattle() {
-  const [state, setState] = useState<BattleState>(() => createInitialState(0));
+export function useBattle(playerCharacterId?: string) {
+  // Filter out the player's character from the boss list
+  const bossList = useMemo(() => {
+    if (!playerCharacterId) return BOSSES;
+    return BOSSES.filter((boss) => boss.id !== playerCharacterId);
+  }, [playerCharacterId]);
 
-  // Shuffled questions for the current boss -- reshuffled whenever the boss
-  // index changes.
-  const [shuffledQuestions, setShuffledQuestions] = useState<Question[]>(() =>
-    shuffleArray(getQuestionsForBoss(BOSSES[0].id)),
+  // Load save once on mount (ref avoids re-running on every render)
+  const savedRef = useRef<SavedGame | null | undefined>(undefined);
+  if (savedRef.current === undefined) {
+    savedRef.current = loadGame(playerCharacterId);
+  }
+  const saved = savedRef.current;
+
+  const [state, setState] = useState<BattleState>(
+    () => saved?.battleState ?? createInitialState(0, bossList),
+  );
+
+  // Random subset of questions for the current boss
+  const [shuffledQuestions, setShuffledQuestions] = useState<Question[]>(
+    () => saved?.shuffledQuestions ?? getRandomQuestionsForBoss(bossList[0].id, QUESTIONS_PER_BOSS),
   );
 
   // Derived values ---------------------------------------------------------
 
   const currentBoss: Boss = useMemo(
-    () => BOSSES[state.currentBossIndex],
-    [state.currentBossIndex],
+    () => bossList[state.currentBossIndex],
+    [bossList, state.currentBossIndex],
   );
 
   const currentQuestion: Question = useMemo(
@@ -111,13 +167,26 @@ export function useBattle() {
     [shuffledQuestions, state.currentQuestionIndex],
   );
 
+  // Auto-save --------------------------------------------------------------
+
+  useEffect(() => {
+    if (state.phase === "gameover" || state.phase === "victory") {
+      clearSave();
+      return;
+    }
+    saveGame(state, playerCharacterId, shuffledQuestions);
+  }, [state, playerCharacterId, shuffledQuestions]);
+
   // Actions ----------------------------------------------------------------
 
   /** Reset the entire game back to boss 0. */
   const startGame = useCallback(() => {
-    const initial = createInitialState(0);
-    const boss = BOSSES[0];
-    const questions = shuffleArray(getQuestionsForBoss(boss.id));
+    clearSave();
+    const initial = createInitialState(0, bossList);
+    const boss = bossList[0];
+    const questions = shuffleQuestionAnswers(
+      getRandomQuestionsForBoss(boss.id, QUESTIONS_PER_BOSS)
+    );
     const { line, updatedUsed } = pickDialog(boss, "intro", {});
 
     setShuffledQuestions(questions);
@@ -126,7 +195,7 @@ export function useBattle() {
       currentDialog: line,
       usedDialog: updatedUsed,
     });
-  }, []);
+  }, [bossList]);
 
   /** Transition from the intro screen into the first question. */
   const startBoss = useCallback(() => {
@@ -166,7 +235,7 @@ export function useBattle() {
         }
 
         // Choose dialog trigger with priority rules.
-        const boss = BOSSES[prev.currentBossIndex];
+        const boss = bossList[prev.currentBossIndex];
         let trigger: DialogTrigger;
 
         if (!correct && newPlayerHp <= 1) {
@@ -194,6 +263,7 @@ export function useBattle() {
           currentDialog: line,
           usedDialog: updatedUsed,
           questionsAnswered: prev.questionsAnswered + 1,
+          score: correct ? prev.score + 1 : prev.score,
         };
       });
     },
@@ -203,7 +273,7 @@ export function useBattle() {
   /** Advance to the next question, or transition to end-of-fight phases. */
   const nextQuestion = useCallback(() => {
     setState((prev) => {
-      const boss = BOSSES[prev.currentBossIndex];
+      const boss = bossList[prev.currentBossIndex];
 
       // Player KO
       if (prev.playerHp <= 0) {
@@ -262,13 +332,13 @@ export function useBattle() {
         expression: "neutral" as Expression,
       };
     });
-  }, []);
+  }, [bossList]);
 
   /** Advance to the next boss, or trigger overall victory. */
   const nextBoss = useCallback(() => {
     const nextIndex = state.currentBossIndex + 1;
 
-    if (nextIndex >= BOSSES.length) {
+    if (nextIndex >= bossList.length) {
       // All bosses beaten -- victory!
       setState((prev) => ({
         ...prev,
@@ -278,18 +348,21 @@ export function useBattle() {
     }
 
     // Set up for the next boss.
-    const nextBossData = BOSSES[nextIndex];
-    const questions = shuffleArray(getQuestionsForBoss(nextBossData.id));
-    const initial = createInitialState(nextIndex);
+    const nextBossData = bossList[nextIndex];
+    const questions = shuffleQuestionAnswers(
+      getRandomQuestionsForBoss(nextBossData.id, QUESTIONS_PER_BOSS)
+    );
+    const initial = createInitialState(nextIndex, bossList);
     const { line, updatedUsed } = pickDialog(nextBossData, "intro", {});
 
     setShuffledQuestions(questions);
-    setState({
+    setState((prev) => ({
       ...initial,
+      score: prev.score,
       currentDialog: line,
       usedDialog: updatedUsed,
-    });
-  }, [state.currentBossIndex]);
+    }));
+  }, [state.currentBossIndex, bossList]);
 
   return {
     state,
@@ -301,5 +374,8 @@ export function useBattle() {
     selectAnswer,
     nextQuestion,
     nextBoss,
+    bossList,
+    clearSave,
+    hasSave: saved !== null,
   };
 }

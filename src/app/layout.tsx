@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { Inter, Press_Start_2P } from "next/font/google";
 import { TooltipProvider } from "@/components/ui/tooltip";
+import { MusicPlayer } from "@/components/music-player";
 import "./globals.css";
 
 const inter = Inter({
@@ -28,7 +29,10 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={`${inter.variable} ${pressStart2P.variable} font-sans antialiased`}>
-        <TooltipProvider>{children}</TooltipProvider>
+        <TooltipProvider>
+          {children}
+          <MusicPlayer />
+        </TooltipProvider>
       </body>
     </html>
   );

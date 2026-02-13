@@ -10,12 +10,12 @@ interface SceneBackgroundProps {
 }
 
 const sceneColors: Record<string, string> = {
-  bullpen: "from-blue-900/20 to-amber-900/20",
-  "holts-office": "from-slate-900/20 to-blue-900/20",
-  "shaws-bar": "from-amber-900/30 to-red-900/20",
-  "evidence-room": "from-gray-900/20 to-slate-900/20",
-  "interrogation-room": "from-gray-900/30 to-gray-800/20",
-  "nikolajs-house": "from-green-900/20 to-amber-900/20",
+  bullpen: "from-blue-800/30 to-slate-700/30",
+  "holts-office": "from-slate-800/30 to-blue-900/30",
+  "shaws-bar": "from-amber-800/30 to-orange-900/30",
+  "evidence-room": "from-gray-800/30 to-slate-800/30",
+  "interrogation-room": "from-gray-800/40 to-slate-900/40",
+  "nikolajs-house": "from-teal-800/30 to-blue-900/30",
 };
 
 export function SceneBackground({ scene = "bullpen", children, className }: SceneBackgroundProps) {
@@ -26,13 +26,11 @@ export function SceneBackground({ scene = "bullpen", children, className }: Scen
       {/* Background image */}
       <div className="absolute inset-0">
         <Image
-          src={`/backgrounds/${scene}.png`}
+          src="/backgrounds/insidebg.png"
           alt={scene}
           fill
-          className="pixel-render object-cover opacity-30"
-          onError={(e) => {
-            (e.target as HTMLImageElement).style.display = "none";
-          }}
+          className="object-cover"
+          priority
         />
         <div className={cn("absolute inset-0 bg-gradient-to-b", gradientClass)} />
       </div>

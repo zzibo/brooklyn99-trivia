@@ -42,4 +42,5 @@ export interface BattleState {
   currentDialog: string;
   usedDialog: Record<string, string[]>;
   questionsAnswered: number;
+  score: number;
 }
