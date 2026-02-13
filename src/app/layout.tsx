@@ -15,9 +15,9 @@ const pressStart2P = Press_Start_2P({
 });
 
 export const metadata: Metadata = {
-  title: "Brooklyn 99 Trivia Trainer",
+  title: "Brooklyn 99 Trivia Battle",
   description:
-    "Test your Brooklyn Nine-Nine knowledge with spaced repetition! Pixel art characters quiz you on everything B99.",
+    "Battle through 6 Brooklyn Nine-Nine bosses in this Pokemon-style trivia gauntlet!",
 };
 
 export default function RootLayout({

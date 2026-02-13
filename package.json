@@ -4,20 +4,15 @@
   "private": true,
   "scripts": {
     "dev": "next dev",
-    "build": "npm run db:export && next build",
+    "build": "next build",
     "start": "next start",
     "lint": "eslint",
-    "db:seed": "tsx data/seed.ts",
-    "db:export": "tsx data/export.ts",
-    "db:reset": "tsx data/seed.ts && tsx data/export.ts",
     "generate-art": "tsx scripts/generate-art.ts"
   },
   "dependencies": {
     "@google/genai": "^1.41.0",
-    "better-sqlite3": "^12.6.2",
     "class-variance-authority": "^0.7.1",
     "clsx": "^2.1.1",
-    "drizzle-orm": "^0.45.1",
     "lucide-react": "^0.563.0",
     "next": "16.1.6",
     "radix-ui": "^1.4.3",
@@ -27,11 +22,9 @@
   },
   "devDependencies": {
     "@tailwindcss/postcss": "^4",
-    "@types/better-sqlite3": "^7.6.13",
     "@types/node": "^20",
     "@types/react": "^19",
     "@types/react-dom": "^19",
-    "drizzle-kit": "^0.31.9",
     "eslint": "^9",
     "eslint-config-next": "16.1.6",
     "shadcn": "^3.8.4",
