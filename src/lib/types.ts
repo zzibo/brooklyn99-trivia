@@ -1,19 +1,3 @@
-import type { Rating } from "ts-fsrs";
-
-export interface Character {
-  id: string;
-  name: string;
-  title: string;
-  color: string;
-}
-
-export interface Category {
-  id: string;
-  name: string;
-  description: string;
-  icon: string;
-}
-
 export interface Answer {
   id: number;
   text: string;
@@ -22,57 +6,40 @@ export interface Answer {
 
 export interface Question {
   id: number;
-  categoryId: string;
-  characterId: string;
+  bossId: string;
   question: string;
-  difficulty: number;
+  difficulty: 1 | 2 | 3;
   answers: Answer[];
-}
-
-// FSRS card state stored in localStorage
-export interface FSRSCardState {
-  questionId: number;
-  due: string; // ISO date string
-  stability: number;
-  difficulty: number;
-  elapsed_days: number;
-  scheduled_days: number;
-  reps: number;
-  lapses: number;
-  state: number; // State enum from ts-fsrs (0=New, 1=Learning, 2=Review, 3=Relearning)
-  last_review?: string; // ISO date string
-}
-
-export interface UserStats {
-  totalReviews: number;
-  correctAnswers: number;
-  streak: number;
-  longestStreak: number;
-  lastReviewDate?: string;
-  reviewsByDate: Record<string, number>; // "YYYY-MM-DD" -> count
-  categoryProgress: Record<string, CategoryProgress>;
-}
-
-export interface CategoryProgress {
-  total: number;
-  mastered: number; // state >= 2 (Review)
-  learning: number; // state 1 (Learning)
-  new: number; // state 0 (New)
 }
 
 export type Expression = "neutral" | "happy" | "sad";
 
-export type TrainingPhase = "question" | "reveal" | "rating";
+export type BattlePhase = "intro" | "question" | "reveal" | "boss_defeated" | "gameover" | "victory";
 
-export interface TrainingState {
-  phase: TrainingPhase;
-  currentQuestion: Question | null;
-  selectedAnswerId: number | null;
-  isCorrect: boolean | null;
-  character: Character | null;
-  expression: Expression;
-  questionsReviewed: number;
-  sessionCorrect: number;
+export type DialogTrigger = "intro" | "correct" | "wrong" | "player_low_hp" | "boss_low_hp" | "defeat" | "victory";
+
+export interface Boss {
+  id: string;
+  name: string;
+  title: string;
+  color: string;
+  playerHp: number;
+  background: string;
+  dialog: Record<DialogTrigger, string[]>;
 }
 
-export { Rating };
+export interface BattleState {
+  currentBossIndex: number;
+  currentQuestionIndex: number;
+  playerHp: number;
+  playerMaxHp: number;
+  bossHp: number;
+  bossMaxHp: number;
+  phase: BattlePhase;
+  selectedAnswerId: number | null;
+  isCorrect: boolean | null;
+  expression: Expression;
+  currentDialog: string;
+  usedDialog: Record<string, string[]>;
+  questionsAnswered: number;
+}
