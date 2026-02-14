@@ -1,4 +1,4 @@
-import type { Metadata } from "next";
+import type { Metadata, Viewport } from "next";
 import { Inter, Press_Start_2P } from "next/font/google";
 import { TooltipProvider } from "@/components/ui/tooltip";
 import { MusicPlayer } from "@/components/music-player";
@@ -19,6 +19,13 @@ export const metadata: Metadata = {
   title: "Brooklyn 99 Trivia Battle",
   description:
     "Battle through 6 Brooklyn Nine-Nine bosses in this Pokemon-style trivia gauntlet!",
+};
+
+export const viewport: Viewport = {
+  width: "device-width",
+  initialScale: 1,
+  maximumScale: 1,
+  userScalable: false,
 };
 
 export default function RootLayout({

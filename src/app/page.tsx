@@ -38,11 +38,11 @@ export default function HomePage() {
       {/* Content */}
       <div className="relative z-10 flex flex-col items-center gap-8">
         {/* Title */}
-        <div className="animate-title-fade-in pixel-border bg-b99-dark/85 rounded px-12 py-8 text-center backdrop-blur-sm">
-          <h1 className="font-pixel text-b99-gold text-3xl leading-loose tracking-wider md:text-5xl lg:text-6xl">
+        <div className="animate-title-fade-in pixel-border bg-b99-dark/85 rounded px-6 py-6 text-center backdrop-blur-sm sm:px-12 sm:py-8">
+          <h1 className="font-pixel text-b99-gold text-xl leading-loose tracking-wider sm:text-3xl md:text-5xl lg:text-6xl">
             B99 SHORT TRIVIA
           </h1>
-          <p className="font-pixel text-b99-cream mt-3 text-sm md:text-base">
+          <p className="font-pixel text-b99-cream mt-3 text-xs sm:text-sm md:text-base">
             TITLE OF YOUR SEX TAPE
           </p>
         </div>

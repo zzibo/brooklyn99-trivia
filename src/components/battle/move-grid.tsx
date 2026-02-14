@@ -20,20 +20,20 @@ export function MoveGrid({ question, selectedAnswerId, isRevealed, onSelectAnswe
   const difficulty = difficultyLabels[question.difficulty as keyof typeof difficultyLabels] || difficultyLabels[1];
 
   return (
-    <div className="absolute bottom-0 left-0 right-0 p-4">
+    <div className="p-2 sm:p-3 md:p-4">
       {/* Question dialog box - like Pokemon battle text */}
-      <div className="pixel-border mb-3 bg-card p-4 shadow-lg">
-        <div className="flex items-start justify-between gap-3 mb-2">
-          <p className="font-pixel text-xs leading-relaxed md:text-sm flex-1">{question.question}</p>
-          <span className={`font-pixel text-[8px] px-2 py-1 rounded shrink-0 ${difficulty.color}`}>
+      <div className="pixel-border mb-2 bg-card p-2 shadow-lg sm:mb-3 sm:p-3 md:p-4">
+        <div className="flex items-start justify-between gap-2 sm:gap-3">
+          <p className="font-pixel text-[9px] leading-relaxed sm:text-xs md:text-sm flex-1">{question.question}</p>
+          <span className={`font-pixel text-[7px] px-1.5 py-0.5 rounded shrink-0 sm:text-[8px] sm:px-2 sm:py-1 ${difficulty.color}`}>
             {difficulty.text}
           </span>
         </div>
       </div>
 
       {/* Battle menu - Pokemon style with 2x2 grid */}
-      <div className="pixel-border bg-card p-3 shadow-lg">
-        <div className="grid grid-cols-2 gap-2">
+      <div className="pixel-border bg-card p-2 shadow-lg sm:p-3">
+        <div className="grid grid-cols-1 gap-1.5 sm:grid-cols-2 sm:gap-2">
           {question.answers.map((answer, index) => {
             const isSelected = selectedAnswerId === answer.id;
             const isCorrectAnswer = answer.isCorrect;
@@ -70,15 +70,15 @@ export function MoveGrid({ question, selectedAnswerId, isRevealed, onSelectAnswe
                 key={answer.id}
                 onClick={() => onSelectAnswer(answer.id)}
                 disabled={disabled}
-                className={`${borderClass} ${bgClass} ${animClass} rounded-lg p-3 text-left transition-all ${
+                className={`${borderClass} ${bgClass} ${animClass} rounded-lg p-3 text-left transition-all sm:p-3 ${
                   !disabled ? "cursor-pointer hover:scale-[1.02]" : "cursor-not-allowed"
                 }`}
               >
-                <div className="flex items-start gap-2">
-                  <span className="font-pixel shrink-0 text-[10px] text-accent">
+                <div className="flex items-start gap-1.5 sm:gap-2">
+                  <span className="font-pixel shrink-0 text-[8px] text-accent sm:text-[10px]">
                     ▶
                   </span>
-                  <span className={`font-pixel text-[10px] leading-relaxed ${textClass}`}>
+                  <span className={`font-pixel text-[8px] leading-relaxed sm:text-[10px] ${textClass}`}>
                     {answer.text}
                   </span>
                 </div>

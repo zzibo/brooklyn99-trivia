@@ -47,9 +47,9 @@ export function BattleDialog({
   if (phase === "question" || phase === "reveal") return null;
 
   return (
-    <div className="fixed inset-0 z-50 flex items-center justify-center bg-black/60 p-4">
-      <PixelBorder className="animate-fade-in-up w-full max-w-md space-y-6 bg-card text-center">
-        {phase === "victory" ? (
+    <div className="fixed inset-0 z-50 flex items-center justify-center bg-black/60 p-3 sm:p-4">
+      <PixelBorder className="animate-fade-in-up w-full max-w-md space-y-4 bg-card text-center sm:space-y-6 max-h-[90dvh] overflow-y-auto">
+        {phase === "victory" && (
           <>
             <h2 className="font-pixel text-base text-accent md:text-lg">
               NINE NINE!
@@ -78,7 +78,43 @@ export function BattleDialog({
               <PixelButton size="lg">Play Again</PixelButton>
             </Link>
           </>
-        ) : (
+        )}
+
+        {phase === "gameover" && (
+          <>
+            <div className="bg-white rounded-lg p-4 mx-auto inline-block">
+              <CharacterSprite
+                characterId={boss.id}
+                expression="happy"
+                size="lg"
+              />
+            </div>
+            <h2 className="font-pixel text-sm md:text-base">Game Over!</h2>
+            <p className="font-pixel text-[10px] text-muted-foreground">
+              Defeated by {boss.name}
+            </p>
+            <p className="font-pixel text-[10px] leading-relaxed">&ldquo;{dialog}&rdquo;</p>
+            <div className="font-pixel text-lg text-accent">
+              Score: {score}
+            </div>
+            {currentBossIndex > 0 && (
+              <div className="flex flex-wrap justify-center gap-2">
+                {defeatedBosses?.slice(0, currentBossIndex).map((b) => (
+                  <div key={b.id} className="bg-white rounded-lg p-1">
+                    <CharacterSprite characterId={b.id} expression="sad" size="sm" />
+                  </div>
+                ))}
+              </div>
+            )}
+            <Link href="/select">
+              <PixelButton size="lg" variant="danger">
+                Try Again
+              </PixelButton>
+            </Link>
+          </>
+        )}
+
+        {(phase === "intro" || phase === "boss_defeated") && (
           <>
             <div className="bg-white rounded-lg p-4 mx-auto inline-block">
               <CharacterSprite
@@ -88,15 +124,12 @@ export function BattleDialog({
               />
             </div>
             <h2 className="font-pixel text-sm md:text-base">
-              {phase === "intro" && boss.name}
-              {phase === "boss_defeated" && "Boss Defeated!"}
-              {phase === "gameover" && "Game Over!"}
+              {phase === "intro" ? boss.name : "Boss Defeated!"}
             </h2>
             {phase === "intro" && (
               <p className="font-pixel text-[8px] text-muted-foreground">{boss.title}</p>
             )}
             <p className="font-pixel text-[10px] leading-relaxed">&ldquo;{dialog}&rdquo;</p>
-
             {phase === "intro" && (
               <PixelButton onClick={onStartBoss} size="lg">
                 Fight!
@@ -106,39 +139,6 @@ export function BattleDialog({
               <PixelButton onClick={onNextBoss} size="lg">
                 Next Boss
               </PixelButton>
-            )}
-            {phase === "gameover" && (
-              <>
-                <div className="bg-white rounded-lg p-4 mx-auto inline-block">
-                  <CharacterSprite
-                    characterId={boss.id}
-                    expression="happy"
-                    size="lg"
-                  />
-                </div>
-                <h2 className="font-pixel text-sm md:text-base">Game Over!</h2>
-                <p className="font-pixel text-[10px] text-muted-foreground">
-                  Defeated by {boss.name}
-                </p>
-                <p className="font-pixel text-[10px] leading-relaxed">&ldquo;{dialog}&rdquo;</p>
-                <div className="font-pixel text-lg text-accent">
-                  Score: {score}
-                </div>
-                {currentBossIndex > 0 && (
-                  <div className="flex flex-wrap justify-center gap-2">
-                    {defeatedBosses?.slice(0, currentBossIndex).map((b) => (
-                      <div key={b.id} className="bg-white rounded-lg p-1">
-                        <CharacterSprite characterId={b.id} expression="sad" size="sm" />
-                      </div>
-                    ))}
-                  </div>
-                )}
-                <Link href="/select">
-                  <PixelButton size="lg" variant="danger">
-                    Try Again
-                  </PixelButton>
-                </Link>
-              </>
             )}
           </>
         )}

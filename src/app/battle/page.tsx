@@ -54,9 +54,10 @@ function BattleContent() {
     }
   }, [hasSave, startGame]);
 
-  // B99 theme plays during questions, stops on overlays
+  // B99 theme plays during questions and reveals, stops on overlays
   useEffect(() => {
-    if (state.phase === "question") {
+    const isPlaying = state.phase === "question" || state.phase === "reveal";
+    if (isPlaying) {
       startBgMusic();
     } else {
       stopBgMusic();
@@ -87,7 +88,7 @@ function BattleContent() {
 
   return (
     <SceneBackground scene={currentBoss.background}>
-      <div className="relative mx-auto flex min-h-screen max-w-4xl flex-col">
+      <div className="relative mx-auto flex h-dvh max-w-4xl flex-col overflow-hidden">
         {/* Boss area - top section */}
         <BattleHud
           boss={currentBoss}
@@ -97,18 +98,16 @@ function BattleContent() {
           dialog={state.currentDialog}
         />
 
-        {/* Player area - middle/bottom section */}
-        <PlayerHud
-          playerHp={state.playerHp}
-          playerMaxHp={state.playerMaxHp}
-          questionIndex={state.currentQuestionIndex}
-          totalQuestions={questions.length}
-          playerCharacterId={playerCharacter || undefined}
-        />
-
-        {/* Move grid (question + answers) - overlays at bottom */}
+        {/* Player + Move grid - bottom section */}
         {state.phase === "question" || state.phase === "reveal" ? (
-          <>
+          <div className="relative z-10 mt-auto">
+            <PlayerHud
+              playerHp={state.playerHp}
+              playerMaxHp={state.playerMaxHp}
+              questionIndex={state.currentQuestionIndex}
+              totalQuestions={questions.length}
+              playerCharacterId={playerCharacter || undefined}
+            />
             <MoveGrid
               question={currentQuestion}
               selectedAnswerId={state.selectedAnswerId}
@@ -123,7 +122,7 @@ function BattleContent() {
                 </PixelButton>
               </div>
             )}
-          </>
+          </div>
         ) : null}
 
         {/* Overlay for intro/defeat/gameover/victory */}
