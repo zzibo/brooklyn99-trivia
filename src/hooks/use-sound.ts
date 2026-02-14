@@ -1,6 +1,7 @@
 "use client";
 
-import { useRef, useCallback } from "react";
+import { useCallback } from "react";
+import { playBgMusic, stopBgMusic } from "@/lib/audio";
 
 const SOUNDS = {
   correct: "/music/correct.mp3",
@@ -13,8 +14,6 @@ const SOUNDS = {
 type SoundName = keyof typeof SOUNDS;
 
 export function useSound() {
-  const bgRef = useRef<HTMLAudioElement | null>(null);
-
   const play = useCallback((name: SoundName) => {
     const audio = new Audio(SOUNDS[name]);
     audio.volume = 0.5;
@@ -22,21 +21,12 @@ export function useSound() {
   }, []);
 
   const startBgMusic = useCallback(() => {
-    if (bgRef.current) return;
-    const audio = new Audio("/music/theme.mp3");
-    audio.loop = true;
-    audio.volume = 0.2;
-    audio.play().catch(() => {});
-    bgRef.current = audio;
+    playBgMusic();
   }, []);
 
-  const stopBgMusic = useCallback(() => {
-    if (bgRef.current) {
-      bgRef.current.pause();
-      bgRef.current.src = "";
-      bgRef.current = null;
-    }
+  const stopBg = useCallback(() => {
+    stopBgMusic();
   }, []);
 
-  return { play, startBgMusic, stopBgMusic };
+  return { play, startBgMusic, stopBgMusic: stopBg };
 }
