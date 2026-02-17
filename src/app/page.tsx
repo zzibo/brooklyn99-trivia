@@ -47,14 +47,21 @@ export default function HomePage() {
           </p>
         </div>
 
-        {/* Start button */}
-        <PixelButton 
-          size="lg" 
-          className="animate-button-fade-in text-sm md:text-base px-10 py-4 hover:animate-none"
-          onClick={handleStartClick}
-        >
-          START
-        </PixelButton>
+        {/* Buttons */}
+        <div className="animate-button-fade-in flex flex-col items-center gap-3">
+          <PixelButton
+            size="lg"
+            className="text-sm md:text-base px-10 py-4 hover:animate-none"
+            onClick={handleStartClick}
+          >
+            START
+          </PixelButton>
+          <Link href="/leaderboard">
+            <PixelButton size="md" variant="secondary">
+              Leaderboard
+            </PixelButton>
+          </Link>
+        </div>
       </div>
     </div>
   );

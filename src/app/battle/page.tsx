@@ -8,6 +8,7 @@ import { PlayerHud } from "@/components/battle/player-hud";
 import { MoveGrid } from "@/components/battle/move-grid";
 import { BattleDialog } from "@/components/battle/battle-dialog";
 import { PixelButton } from "@/components/pixel/pixel-button";
+import { ReportButton } from "@/components/battle/report-button";
 import { useBattle } from "@/hooks/use-battle";
 import { useSound } from "@/hooks/use-sound";
 
@@ -116,7 +117,12 @@ function BattleContent() {
               disabled={isRevealed}
             />
             {isRevealed && (
-              <div className="absolute bottom-4 right-4 z-10">
+              <div className="absolute bottom-4 right-4 z-10 flex items-center gap-2">
+                <ReportButton
+                  questionText={currentQuestion.question}
+                  correctAnswer={currentQuestion.answers.find(a => a.isCorrect)?.text || ""}
+                  bossId={currentBoss.id}
+                />
                 <PixelButton onClick={nextQuestion} size="md">
                   Next ▶
                 </PixelButton>
@@ -139,6 +145,7 @@ function BattleContent() {
             onStartGame={startGame}
             totalBosses={bossList.length}
             defeatedBosses={bossList}
+            playerCharacterId={playerCharacter || undefined}
           />
         )}
       </div>

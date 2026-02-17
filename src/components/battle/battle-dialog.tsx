@@ -1,11 +1,13 @@
 "use client";
 
+import { useState } from "react";
 import Link from "next/link";
 import { CharacterSprite } from "@/components/pixel/character-sprite";
 import { PixelBorder } from "@/components/pixel/pixel-border";
 import { PixelButton } from "@/components/pixel/pixel-button";
 import type { Boss, BattlePhase, Expression } from "@/lib/types";
 import { BOSSES } from "@/data/bosses";
+import { submitScore } from "@/lib/supabase";
 
 const VICTORY_QUOTES = [
   "Hot damn!",
@@ -29,6 +31,7 @@ interface BattleDialogProps {
   defeatedBosses?: Boss[];
   score: number;
   currentBossIndex: number;
+  playerCharacterId?: string;
 }
 
 export function BattleDialog({
@@ -43,7 +46,22 @@ export function BattleDialog({
   defeatedBosses = BOSSES,
   score = 0,
   currentBossIndex = 0,
+  playerCharacterId,
 }: BattleDialogProps) {
+  const [playerName, setPlayerName] = useState("");
+  const [submitState, setSubmitState] = useState<"idle" | "submitting" | "done" | "error">("idle");
+
+  const handleSubmitScore = async () => {
+    if (!playerName.trim()) return;
+    setSubmitState("submitting");
+    try {
+      await submitScore(playerName.trim(), score, playerCharacterId || "unknown");
+      setSubmitState("done");
+    } catch {
+      setSubmitState("error");
+    }
+  };
+
   if (phase === "question" || phase === "reveal") return null;
 
   return (
@@ -74,6 +92,34 @@ export function BattleDialog({
             <p className="font-pixel text-[10px] text-muted-foreground italic">
               &ldquo;{VICTORY_QUOTES[Math.floor(Math.random() * VICTORY_QUOTES.length)]}&rdquo;
             </p>
+
+            {/* Score submission */}
+            {submitState === "done" ? (
+              <p className="font-pixel text-[10px] text-b99-green">Score submitted!</p>
+            ) : (
+              <div className="flex flex-col items-center gap-2">
+                <input
+                  type="text"
+                  maxLength={20}
+                  placeholder="Enter your name"
+                  value={playerName}
+                  onChange={(e) => setPlayerName(e.target.value)}
+                  onKeyDown={(e) => e.key === "Enter" && handleSubmitScore()}
+                  className="font-pixel pixel-border w-full max-w-[200px] rounded bg-background px-3 py-2 text-center text-[10px] text-foreground outline-none placeholder:text-muted-foreground"
+                />
+                <PixelButton
+                  size="md"
+                  onClick={handleSubmitScore}
+                  disabled={!playerName.trim() || submitState === "submitting"}
+                >
+                  {submitState === "submitting" ? "Submitting..." : "Submit Score"}
+                </PixelButton>
+                {submitState === "error" && (
+                  <p className="font-pixel text-[8px] text-destructive">Failed to submit. Try again!</p>
+                )}
+              </div>
+            )}
+
             <Link href="/select">
               <PixelButton size="lg">Play Again</PixelButton>
             </Link>
@@ -106,6 +152,34 @@ export function BattleDialog({
                 ))}
               </div>
             )}
+
+            {/* Score submission */}
+            {submitState === "done" ? (
+              <p className="font-pixel text-[10px] text-b99-green">Score submitted!</p>
+            ) : (
+              <div className="flex flex-col items-center gap-2">
+                <input
+                  type="text"
+                  maxLength={20}
+                  placeholder="Enter your name"
+                  value={playerName}
+                  onChange={(e) => setPlayerName(e.target.value)}
+                  onKeyDown={(e) => e.key === "Enter" && handleSubmitScore()}
+                  className="font-pixel pixel-border w-full max-w-[200px] rounded bg-background px-3 py-2 text-center text-[10px] text-foreground outline-none placeholder:text-muted-foreground"
+                />
+                <PixelButton
+                  size="md"
+                  onClick={handleSubmitScore}
+                  disabled={!playerName.trim() || submitState === "submitting"}
+                >
+                  {submitState === "submitting" ? "Submitting..." : "Submit Score"}
+                </PixelButton>
+                {submitState === "error" && (
+                  <p className="font-pixel text-[8px] text-destructive">Failed to submit. Try again!</p>
+                )}
+              </div>
+            )}
+
             <Link href="/select">
               <PixelButton size="lg" variant="danger">
                 Try Again
