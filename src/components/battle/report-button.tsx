@@ -4,7 +4,7 @@ import { useState } from "react";
 import { Flag } from "lucide-react";
 import { PixelBorder } from "@/components/pixel/pixel-border";
 import { PixelButton } from "@/components/pixel/pixel-button";
-import { reportQuestion } from "@/lib/supabase";
+import { reportQuestion } from "@/lib/db";
 
 interface ReportButtonProps {
   questionText: string;
@@ -14,12 +14,13 @@ interface ReportButtonProps {
 
 export function ReportButton({ questionText, correctAnswer, bossId }: ReportButtonProps) {
   const [showConfirm, setShowConfirm] = useState(false);
+  const [suggestion, setSuggestion] = useState("");
   const [status, setStatus] = useState<"idle" | "submitting" | "done" | "error">("idle");
 
   const handleReport = async () => {
     setStatus("submitting");
     try {
-      await reportQuestion(questionText, correctAnswer, bossId);
+      await reportQuestion(questionText, correctAnswer, bossId, suggestion.trim());
       setStatus("done");
     } catch {
       setStatus("error");
@@ -28,7 +29,7 @@ export function ReportButton({ questionText, correctAnswer, bossId }: ReportButt
 
   if (status === "done") {
     return (
-      <span className="font-pixel text-[8px] text-muted-foreground">
+      <span className="font-pixel text-[8px] text-muted-foreground sm:text-[10px]">
         Reported!
       </span>
     );
@@ -36,14 +37,17 @@ export function ReportButton({ questionText, correctAnswer, bossId }: ReportButt
 
   return (
     <>
-      <button
+      <PixelButton
         onClick={() => setShowConfirm(true)}
         disabled={status !== "idle"}
-        className="cursor-pointer rounded p-1.5 text-muted-foreground transition-colors hover:bg-destructive/10 hover:text-destructive disabled:cursor-not-allowed disabled:opacity-50"
-        title="Report incorrect question"
+        variant="danger"
+        size="sm"
       >
-        <Flag className="h-3.5 w-3.5 sm:h-4 sm:w-4" />
-      </button>
+        <span className="flex items-center gap-1">
+          <Flag className="h-3 w-3" />
+          Report
+        </span>
+      </PixelButton>
 
       {showConfirm && (
         <div className="fixed inset-0 z-[60] flex items-center justify-center bg-black/60 p-4">
@@ -62,6 +66,17 @@ export function ReportButton({ questionText, correctAnswer, bossId }: ReportButt
               <p className="font-pixel text-[8px] leading-relaxed text-b99-green">
                 {correctAnswer}
               </p>
+              <p className="font-pixel text-[8px] leading-relaxed text-muted-foreground">
+                What&apos;s wrong?
+              </p>
+              <textarea
+                value={suggestion}
+                onChange={(e) => setSuggestion(e.target.value)}
+                maxLength={200}
+                rows={2}
+                placeholder="e.g. The correct answer should be..."
+                className="font-pixel pixel-border w-full rounded bg-background px-2 py-1.5 text-[8px] leading-relaxed text-foreground outline-none placeholder:text-muted-foreground resize-none"
+              />
             </div>
             <div className="flex justify-center gap-2">
               <PixelButton
