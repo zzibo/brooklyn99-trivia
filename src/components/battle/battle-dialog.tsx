@@ -7,7 +7,7 @@ import { PixelBorder } from "@/components/pixel/pixel-border";
 import { PixelButton } from "@/components/pixel/pixel-button";
 import type { Boss, BattlePhase, Expression } from "@/lib/types";
 import { BOSSES } from "@/data/bosses";
-import { submitScore } from "@/lib/supabase";
+import { submitScore } from "@/lib/db";
 
 const VICTORY_QUOTES = [
   "Hot damn!",

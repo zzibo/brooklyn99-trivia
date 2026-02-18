@@ -5,7 +5,7 @@ import Link from "next/link";
 import { CharacterSprite } from "@/components/pixel/character-sprite";
 import { PixelBorder } from "@/components/pixel/pixel-border";
 import { PixelButton } from "@/components/pixel/pixel-button";
-import { getLeaderboard, type LeaderboardEntry } from "@/lib/supabase";
+import { getLeaderboard, type LeaderboardEntry } from "@/lib/db";
 
 export default function LeaderboardPage() {
   const [entries, setEntries] = useState<LeaderboardEntry[]>([]);
