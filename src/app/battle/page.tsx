@@ -9,6 +9,7 @@ import { MoveGrid } from "@/components/battle/move-grid";
 import { BattleDialog } from "@/components/battle/battle-dialog";
 import { PixelButton } from "@/components/pixel/pixel-button";
 import { ReportButton } from "@/components/battle/report-button";
+import { BackToHomeButton } from "@/components/pixel/back-to-home-button";
 import { useBattle } from "@/hooks/use-battle";
 import { useSound } from "@/hooks/use-sound";
 
@@ -89,6 +90,7 @@ function BattleContent() {
 
   return (
     <SceneBackground scene={currentBoss.background}>
+      <BackToHomeButton />
       <div className="relative mx-auto flex h-dvh max-w-4xl flex-col overflow-hidden">
         {/* Boss area - top section */}
         <BattleHud
@@ -117,7 +119,7 @@ function BattleContent() {
               disabled={isRevealed}
             />
             {isRevealed && (
-              <div className="absolute bottom-4 right-4 z-10 flex items-center gap-2">
+              <div className="flex items-center justify-between px-2 pb-2 sm:px-3 sm:pb-3 md:px-4 md:pb-4">
                 <ReportButton
                   questionText={currentQuestion.question}
                   correctAnswer={currentQuestion.answers.find(a => a.isCorrect)?.text || ""}

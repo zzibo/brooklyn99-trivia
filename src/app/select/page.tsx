@@ -3,6 +3,7 @@
 import { useRouter } from "next/navigation";
 import { CharacterSprite } from "@/components/pixel/character-sprite";
 import { PixelButton } from "@/components/pixel/pixel-button";
+import { BackToHomeButton } from "@/components/pixel/back-to-home-button";
 import { BOSSES } from "@/data/bosses";
 
 export default function SelectPage() {
@@ -21,6 +22,7 @@ export default function SelectPage() {
         backgroundPosition: "center",
       }}
     >
+      <BackToHomeButton />
       {/* Dark overlay */}
       <div className="absolute inset-0 bg-black/50" />
 
